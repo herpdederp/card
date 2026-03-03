@@ -1,7 +1,9 @@
+import { useState } from "react";
 import type { CardDefinition } from "../../../models/card.js";
 import type { CardInstance } from "../../../models/game-state.js";
 import { getDomainColor } from "../../utils/domain-colors.js";
 import { getEffectiveMight, getCurrentHealth, getEffectiveHealth } from "../../utils/card-display.js";
+import { getCardImageUrl } from "../../utils/card-images.js";
 
 interface CardViewProps {
   def: CardDefinition;
@@ -16,6 +18,8 @@ export function CardView({ def, instance, mini, selected, selectable, onClick }:
   const borderColor = def.domains.length > 0 ? getDomainColor(def.domains[0]) : undefined;
   const isExhausted = instance?.exhausted ?? false;
   const hasDamage = instance && instance.damage > 0;
+  const imageUrl = getCardImageUrl(def.id);
+  const [imgFailed, setImgFailed] = useState(false);
 
   const classes = [
     "card",
@@ -55,6 +59,22 @@ export function CardView({ def, instance, mini, selected, selectable, onClick }:
       <div className="card-name">{def.name}</div>
       <div className="card-type">{def.type}</div>
       {costStr && <div className="card-cost">{costStr}</div>}
+
+      {imageUrl && !imgFailed ? (
+        <div className="card-art">
+          <img
+            src={imageUrl}
+            alt={def.name}
+            loading="lazy"
+            onError={() => setImgFailed(true)}
+          />
+        </div>
+      ) : (
+        <div
+          className="card-art card-art-fallback"
+          style={borderColor ? { background: `linear-gradient(135deg, ${borderColor}33, ${borderColor}11)` } : undefined}
+        />
+      )}
 
       {!mini && def.keywords.length > 0 && (
         <div className="card-keywords">

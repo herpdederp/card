@@ -244,6 +244,30 @@ body {
   color: var(--color-energy);
 }
 
+.card-art {
+  width: 100%;
+  height: 60px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 2px 0;
+}
+
+.card-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.card-art-fallback {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+}
+
+.card.mini .card-art {
+  height: 36px;
+}
+
 .card-text {
   font-size: 8px;
   color: var(--text-secondary);
