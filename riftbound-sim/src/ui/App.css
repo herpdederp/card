@@ -1,0 +1,651 @@
+/* ============================================================================
+   Riftbound TCG — UI Styles
+   ============================================================================ */
+
+:root {
+  --domain-fury: #c0392b;
+  --domain-calm: #27ae60;
+  --domain-mind: #8e44ad;
+  --domain-body: #e67e22;
+  --domain-chaos: #f39c12;
+  --domain-order: #2980b9;
+
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: #1a1a2e;
+  --bg-zone: #1c2333;
+  --border-default: #30363d;
+  --border-highlight: #58a6ff;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #484f58;
+  --color-might: #e74c3c;
+  --color-health: #2ecc71;
+  --color-energy: #f1c40f;
+  --color-damage: #ff4444;
+  --color-selected: #58a6ff;
+  --color-targetable: #ffd700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Setup Screen
+   -------------------------------------------------------------------------- */
+
+.setup-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 24px;
+}
+
+.setup-screen h1 {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--domain-fury), var(--domain-chaos));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.setup-screen p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: #21262d;
+  border-color: var(--border-highlight);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #238636;
+  border-color: #2ea043;
+}
+
+.btn-primary:hover {
+  background: #2ea043;
+}
+
+.btn-danger {
+  border-color: #da3633;
+  color: #f85149;
+}
+
+.btn-danger:hover {
+  background: #da36331a;
+}
+
+/* --------------------------------------------------------------------------
+   Game Board Layout
+   -------------------------------------------------------------------------- */
+
+.game-board {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "phase     phase"
+    "opponent  chain"
+    "bfields   chain"
+    "base      chain"
+    "runes     score"
+    "hand      log";
+  height: 100vh;
+  gap: 2px;
+  padding: 2px;
+}
+
+.phase-bar { grid-area: phase; }
+.opponent-zone { grid-area: opponent; }
+.battlefield-strip { grid-area: bfields; }
+.base-zone { grid-area: base; }
+.chain-zone { grid-area: chain; }
+.rune-zone { grid-area: runes; }
+.score-zone { grid-area: score; }
+.hand-zone { grid-area: hand; }
+.log-zone { grid-area: log; }
+
+/* --------------------------------------------------------------------------
+   Phase Bar
+   -------------------------------------------------------------------------- */
+
+.phase-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 12px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-default);
+  font-size: 13px;
+}
+
+.phase-bar .turn-info {
+  font-weight: 600;
+}
+
+.phase-bar .phase-name {
+  color: var(--color-energy);
+  font-weight: 600;
+}
+
+.phase-bar .priority-indicator {
+  color: var(--color-selected);
+}
+
+.phase-bar .viewer-switch {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+
+.phase-bar .actions {
+  display: flex;
+  gap: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Card View
+   -------------------------------------------------------------------------- */
+
+.card {
+  width: 100px;
+  min-height: 140px;
+  border: 2px solid var(--border-default);
+  border-radius: 6px;
+  background: var(--bg-card);
+  font-size: 10px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.15s, box-shadow 0.15s;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.card.exhausted {
+  transform: rotate(90deg);
+  opacity: 0.6;
+}
+
+.card.exhausted:hover {
+  transform: rotate(90deg) translateY(-4px);
+}
+
+.card.selectable {
+  box-shadow: 0 0 8px var(--color-targetable);
+  cursor: pointer;
+}
+
+.card.selected {
+  box-shadow: 0 0 12px var(--color-selected);
+  border-color: var(--color-selected);
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.card-type {
+  font-size: 8px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-cost {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-energy);
+}
+
+.card-text {
+  font-size: 8px;
+  color: var(--text-secondary);
+  flex: 1;
+  overflow: hidden;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 4px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card-might { color: var(--color-might); }
+.card-health { color: var(--color-health); }
+.card-health.damaged { color: var(--color-damage); }
+
+.card-damage-counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-damage);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-keywords {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.keyword-tag {
+  font-size: 7px;
+  background: rgba(255,255,255,0.1);
+  padding: 1px 3px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.card-modifiers {
+  font-size: 8px;
+  color: var(--color-energy);
+  margin-top: 2px;
+}
+
+.card.mini {
+  width: 60px;
+  min-height: 80px;
+  font-size: 8px;
+  padding: 2px;
+}
+
+.card.mini .card-stats {
+  font-size: 10px;
+}
+
+.card.mini .card-text {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Zone Sections
+   -------------------------------------------------------------------------- */
+
+.zone {
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 4px 8px;
+  overflow: auto;
+}
+
+.zone-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.card-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* --------------------------------------------------------------------------
+   Opponent Summary
+   -------------------------------------------------------------------------- */
+
+.opponent-zone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+.opponent-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.opponent-stat {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.opponent-stat span {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Battlefield Strip
+   -------------------------------------------------------------------------- */
+
+.battlefield-strip {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  overflow-x: auto;
+}
+
+.battlefield {
+  flex: 1;
+  min-width: 200px;
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.battlefield.move-target {
+  border-color: var(--color-targetable);
+  box-shadow: 0 0 8px var(--color-targetable);
+  cursor: pointer;
+}
+
+.battlefield-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.battlefield-controller {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.battlefield-divider {
+  border-top: 1px dashed var(--border-default);
+  margin: 2px 0;
+}
+
+.battlefield-units {
+  display: flex;
+  gap: 4px;
+  min-height: 50px;
+  flex-wrap: wrap;
+}
+
+.bf-empty {
+  color: var(--text-muted);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Rune Zone
+   -------------------------------------------------------------------------- */
+
+.rune-zone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.rune-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.rune-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.rune-actions .btn {
+  font-size: 9px;
+  padding: 2px 6px;
+}
+
+.resource-display {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.energy-display {
+  color: var(--color-energy);
+}
+
+.power-display {
+  font-size: 11px;
+}
+
+/* --------------------------------------------------------------------------
+   Score Zone
+   -------------------------------------------------------------------------- */
+
+.score-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 4px 8px;
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Chain Display
+   -------------------------------------------------------------------------- */
+
+.chain-zone {
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 4px 8px;
+  overflow-y: auto;
+}
+
+.chain-entry {
+  padding: 6px;
+  margin-bottom: 4px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.chain-entry.cancelled {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.chain-entry .chain-ability {
+  font-weight: 600;
+}
+
+.chain-entry .chain-controller {
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Hand Zone
+   -------------------------------------------------------------------------- */
+
+.hand-zone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Event Log
+   -------------------------------------------------------------------------- */
+
+.log-zone {
+  background: var(--bg-zone);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 4px 8px;
+  overflow-y: auto;
+  font-size: 10px;
+  max-height: 200px;
+}
+
+.log-entry {
+  padding: 1px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.log-entry.turn-start {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Mulligan Overlay
+   -------------------------------------------------------------------------- */
+
+.mulligan-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 100;
+}
+
+.mulligan-overlay h2 {
+  font-size: 20px;
+}
+
+.mulligan-overlay p {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.mulligan-cards {
+  display: flex;
+  gap: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Targeting Overlay
+   -------------------------------------------------------------------------- */
+
+.targeting-banner {
+  grid-column: 1 / -1;
+  background: rgba(255, 215, 0, 0.15);
+  border-bottom: 2px solid var(--color-targetable);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+/* --------------------------------------------------------------------------
+   Game Over
+   -------------------------------------------------------------------------- */
+
+.game-over-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 100;
+}
+
+.game-over-overlay h2 {
+  font-size: 28px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "riftbound-sim",
+  "version": "0.1.0",
+  "description": "Riftbound TCG digital simulator with multiplayer and bot support",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "vite",
+    "build:ui": "vite build",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}

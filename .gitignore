@@ -1,0 +1,8 @@
+.claude/
+node_modules/
+dist/
+dist-ui/
+*.tsbuildinfo
+*.zip
+*.tar.gz
+*.pdf
