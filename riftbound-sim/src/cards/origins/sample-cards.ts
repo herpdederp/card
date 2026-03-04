@@ -1,9 +1,8 @@
 // ============================================================================
 // Riftbound TCG — Origins Set (Sample Cards)
 // ============================================================================
-// These are example card definitions to demonstrate the data model.
-// The full set (~298 cards) would be imported from a JSON data file
-// scraped/transcribed from the official card database.
+// Real card data from the Origins (OGN) set. Abilities are simplified where
+// the full effect exceeds engine capabilities (e.g. token creation).
 // ============================================================================
 
 import {
@@ -26,8 +25,8 @@ import {
 export const jinxLegend: CardDefinition = {
   id: "origins-legend-jinx",
   name: "Jinx",
-  subtitle: "The Loose Cannon",
-  fullName: "Jinx, The Loose Cannon",
+  subtitle: "Loose Cannon",
+  fullName: "Jinx, Loose Cannon",
   set: CardSet.Origins,
   type: CardType.Legend,
   domains: [Domain.Fury, Domain.Chaos],
@@ -36,23 +35,23 @@ export const jinxLegend: CardDefinition = {
   abilities: [
     {
       id: "jinx-legend-ability",
-      name: "Get Excited!",
-      description: "When you conquer a Battlefield, deal 1 damage to each enemy unit at another Battlefield.",
-      trigger: TriggerType.OnConquer,
+      name: "Loose Cannon",
+      description: "At the start of your Beginning Phase, draw 1 if you have 1 or fewer cards in your hand.",
+      trigger: TriggerType.Static,
       targetType: TargetType.None,
     },
   ],
-  championOptions: ["origins-champ-jinx-fury", "origins-champ-jinx-chaos"],
-  rarity: Rarity.Legendary,
-  rulesText: "When you conquer a Battlefield, deal 1 damage to each enemy unit at another Battlefield.",
+  championOptions: ["origins-champ-jinx-fury"],
+  rarity: Rarity.Rare,
+  rulesText: "At the start of your Beginning Phase, draw 1 if you have 1 or fewer cards in your hand.",
   artAsset: "",
 };
 
 export const viktorLegend: CardDefinition = {
   id: "origins-legend-viktor",
   name: "Viktor",
-  subtitle: "The Machine Herald",
-  fullName: "Viktor, The Machine Herald",
+  subtitle: "Herald of the Arcane",
+  fullName: "Viktor, Herald of the Arcane",
   set: CardSet.Origins,
   type: CardType.Legend,
   domains: [Domain.Mind, Domain.Order],
@@ -61,23 +60,24 @@ export const viktorLegend: CardDefinition = {
   abilities: [
     {
       id: "viktor-legend-ability",
-      name: "Glorious Evolution",
-      description: "When you play a Gear, draw a card.",
-      trigger: TriggerType.Static,
+      name: "Herald of the Arcane",
+      description: "1, Tap: Play a 1 Might Recruit unit token.",
+      trigger: TriggerType.Activated,
       targetType: TargetType.None,
+      cost: { energyCost: 1, powerCosts: [] },
     },
   ],
-  championOptions: ["origins-champ-viktor-mind", "origins-champ-viktor-order"],
-  rarity: Rarity.Legendary,
-  rulesText: "When you play a Gear, draw a card.",
+  championOptions: [],
+  rarity: Rarity.Rare,
+  rulesText: "1, Tap: Play a 1 Might Recruit unit token.",
   artAsset: "",
 };
 
 export const leeSinLegend: CardDefinition = {
   id: "origins-legend-leesin",
   name: "Lee Sin",
-  subtitle: "The Blind Monk",
-  fullName: "Lee Sin, The Blind Monk",
+  subtitle: "Blind Monk",
+  fullName: "Lee Sin, Blind Monk",
   set: CardSet.Origins,
   type: CardType.Legend,
   domains: [Domain.Calm, Domain.Body],
@@ -86,46 +86,74 @@ export const leeSinLegend: CardDefinition = {
   abilities: [
     {
       id: "leesin-legend-ability",
-      name: "Dragon's Rage",
-      description: "After a unit you control wins a Showdown alone, ready it.",
-      trigger: TriggerType.Static,
-      targetType: TargetType.None,
+      name: "Blind Monk",
+      description: "1, Tap: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.)",
+      trigger: TriggerType.Activated,
+      targetType: TargetType.FriendlyUnit,
+      targetCount: 1,
+      cost: { energyCost: 1, powerCosts: [] },
     },
   ],
-  championOptions: ["origins-champ-leesin-calm", "origins-champ-leesin-body"],
-  rarity: Rarity.Legendary,
-  rulesText: "After a unit you control wins a Showdown alone, ready it.",
+  championOptions: ["origins-champ-caitlyn"],
+  rarity: Rarity.Rare,
+  rulesText: "1, Tap: Buff a friendly unit.",
   artAsset: "",
 };
 
 // ---------------------------------------------------------------------------
-// Champions (Chosen Champion units)
+// Champions
 // ---------------------------------------------------------------------------
 
 export const jinxChampionFury: CardDefinition = {
   id: "origins-champ-jinx-fury",
   name: "Jinx",
-  subtitle: "Powder Monkey",
-  fullName: "Jinx, Powder Monkey",
+  subtitle: "Demolitionist",
+  fullName: "Jinx, Demolitionist",
   set: CardSet.Origins,
   type: CardType.Champion,
   domains: [Domain.Fury],
   cost: { energyCost: 3, powerCosts: [{ domain: Domain.Fury, amount: 1 }] },
   might: 4,
+  health: 4,
+  keywords: [Keyword.Accelerate, Keyword.Assault],
+  abilities: [
+    {
+      id: "jinx-fury-champ-ability",
+      name: "Demolitionist",
+      description: "Accelerate. Assault 2. When you play me, discard 2.",
+      trigger: TriggerType.OnPlay,
+      targetType: TargetType.None,
+    },
+  ],
+  rarity: Rarity.Rare,
+  rulesText: "Accelerate. Assault 2. When you play me, discard 2.",
+  artAsset: "",
+};
+
+export const caitlynChampion: CardDefinition = {
+  id: "origins-champ-caitlyn",
+  name: "Caitlyn",
+  subtitle: "Patrolling",
+  fullName: "Caitlyn, Patrolling",
+  set: CardSet.Origins,
+  type: CardType.Champion,
+  domains: [Domain.Calm],
+  cost: { energyCost: 3, powerCosts: [{ domain: Domain.Calm, amount: 1 }] },
+  might: 3,
   health: 3,
   keywords: [],
   abilities: [
     {
-      id: "jinx-fury-champ-ability",
-      name: "Fishbones",
-      description: "When I conquer a Battlefield, deal 2 damage to a unit.",
-      trigger: TriggerType.OnConquer,
-      targetType: TargetType.EnemyUnit,
+      id: "caitlyn-ability",
+      name: "Patrolling",
+      description: "Tap: Deal damage equal to my Might to a unit at a battlefield.",
+      trigger: TriggerType.Activated,
+      targetType: TargetType.AnyUnit,
       targetCount: 1,
     },
   ],
   rarity: Rarity.Rare,
-  rulesText: "When I conquer a Battlefield, deal 2 damage to a unit.",
+  rulesText: "I must be assigned combat damage last. Tap: Deal damage equal to my Might to a unit at a battlefield.",
   artAsset: "",
 };
 
@@ -133,98 +161,121 @@ export const jinxChampionFury: CardDefinition = {
 // Units
 // ---------------------------------------------------------------------------
 
-export const caitlynUnit: CardDefinition = {
-  id: "origins-unit-caitlyn",
-  name: "Caitlyn",
-  subtitle: "Sheriff of Piltover",
-  fullName: "Caitlyn, Sheriff of Piltover",
-  set: CardSet.Origins,
-  type: CardType.Unit,
-  domains: [Domain.Order],
-  cost: { energyCost: 2, powerCosts: [{ domain: Domain.Order, amount: 1 }] },
-  might: 3,
-  health: 2,
-  keywords: [],
-  abilities: [
-    {
-      id: "caitlyn-ability",
-      name: "Headshot",
-      description: "When I move to a Battlefield, deal 1 damage to a unit there.",
-      trigger: TriggerType.OnMove,
-      targetType: TargetType.EnemyUnit,
-      targetCount: 1,
-    },
-  ],
-  rarity: Rarity.Uncommon,
-  rulesText: "When I move to a Battlefield, deal 1 damage to a unit there.",
-  artAsset: "",
-};
-
-export const piltoverEnforcerUnit: CardDefinition = {
-  id: "origins-unit-piltover-enforcer",
-  name: "Piltover Enforcer",
-  fullName: "Piltover Enforcer",
-  set: CardSet.Origins,
-  type: CardType.Unit,
-  domains: [Domain.Order],
-  cost: { energyCost: 1, powerCosts: [] },
-  might: 2,
-  health: 1,
-  keywords: [],
-  abilities: [],
-  rarity: Rarity.Common,
-  rulesText: "",
-  artAsset: "",
-};
-
-export const zauniteScrapperUnit: CardDefinition = {
-  id: "origins-unit-zaunite-scrapper",
-  name: "Zaunite Scrapper",
-  fullName: "Zaunite Scrapper",
+export const chemtechEnforcerUnit: CardDefinition = {
+  id: "origins-unit-chemtech-enforcer",
+  name: "Chemtech Enforcer",
+  fullName: "Chemtech Enforcer",
   set: CardSet.Origins,
   type: CardType.Unit,
   domains: [Domain.Fury],
-  cost: { energyCost: 1, powerCosts: [] },
-  might: 1,
+  cost: { energyCost: 2, powerCosts: [] },
+  might: 2,
   health: 2,
-  keywords: [],
+  keywords: [Keyword.Assault],
   abilities: [],
   rarity: Rarity.Common,
-  rulesText: "",
+  rulesText: "Assault 2. When you play me, discard 1.",
   artAsset: "",
 };
 
-export const shadowAssassinUnit: CardDefinition = {
-  id: "origins-unit-shadow-assassin",
-  name: "Shadow Assassin",
-  fullName: "Shadow Assassin",
+export const noxusSaboteurUnit: CardDefinition = {
+  id: "origins-unit-noxus-saboteur",
+  name: "Noxus Saboteur",
+  fullName: "Noxus Saboteur",
+  set: CardSet.Origins,
+  type: CardType.Unit,
+  domains: [Domain.Fury],
+  cost: { energyCost: 3, powerCosts: [] },
+  might: 3,
+  health: 3,
+  keywords: [],
+  abilities: [
+    {
+      id: "noxus-saboteur-ability",
+      name: "Sabotage",
+      description: "Your opponents' Hidden cards can't be revealed here.",
+      trigger: TriggerType.Static,
+      targetType: TargetType.None,
+    },
+  ],
+  rarity: Rarity.Uncommon,
+  rulesText: "Your opponents' Hidden cards can't be revealed here.",
+  artAsset: "",
+};
+
+export const eagerApprenticeUnit: CardDefinition = {
+  id: "origins-unit-eager-apprentice",
+  name: "Eager Apprentice",
+  fullName: "Eager Apprentice",
   set: CardSet.Origins,
   type: CardType.Unit,
   domains: [Domain.Mind],
-  cost: { energyCost: 2, powerCosts: [{ domain: Domain.Mind, amount: 1 }] },
+  cost: { energyCost: 3, powerCosts: [] },
   might: 3,
-  health: 1,
-  keywords: [Keyword.Ganking],
-  abilities: [],
-  rarity: Rarity.Uncommon,
-  rulesText: "Ganking",
+  health: 3,
+  keywords: [],
+  abilities: [
+    {
+      id: "eager-apprentice-ability",
+      name: "Spell Discount",
+      description: "While I'm at a battlefield, the Energy costs for spells you play is reduced by 1, to a minimum of 1.",
+      trigger: TriggerType.Static,
+      targetType: TargetType.None,
+    },
+  ],
+  rarity: Rarity.Common,
+  rulesText: "While I'm at a battlefield, the Energy costs for spells you play is reduced by 1, to a minimum of 1.",
   artAsset: "",
 };
 
-export const stoneGolemUnit: CardDefinition = {
-  id: "origins-unit-stone-golem",
-  name: "Stone Golem",
-  fullName: "Stone Golem",
+export const bilgewaterBullyUnit: CardDefinition = {
+  id: "origins-unit-bilgewater-bully",
+  name: "Bilgewater Bully",
+  fullName: "Bilgewater Bully",
   set: CardSet.Origins,
   type: CardType.Unit,
   domains: [Domain.Body],
-  cost: { energyCost: 4, powerCosts: [{ domain: Domain.Body, amount: 1 }] },
-  might: 5,
+  cost: { energyCost: 6, powerCosts: [] },
+  might: 6,
   health: 6,
   keywords: [],
-  abilities: [],
-  rarity: Rarity.Rare,
-  rulesText: "",
+  abilities: [
+    {
+      id: "bilgewater-bully-ability",
+      name: "Bully",
+      description: "While I'm buffed, I have Ganking.",
+      trigger: TriggerType.Static,
+      targetType: TargetType.None,
+    },
+  ],
+  rarity: Rarity.Common,
+  rulesText: "While I'm buffed, I have Ganking.",
+  artAsset: "",
+};
+
+export const vanguardCaptainUnit: CardDefinition = {
+  id: "origins-unit-vanguard-captain",
+  name: "Vanguard Captain",
+  fullName: "Vanguard Captain",
+  set: CardSet.Origins,
+  type: CardType.Unit,
+  domains: [Domain.Order],
+  cost: { energyCost: 3, powerCosts: [{ domain: Domain.Order, amount: 1 }] },
+  might: 3,
+  health: 3,
+  keywords: [Keyword.Legion],
+  abilities: [
+    {
+      id: "vanguard-captain-ability",
+      name: "Rally the Troops",
+      description: "Legion: When you play me, play two 1 Might Recruit unit tokens here.",
+      trigger: TriggerType.OnPlay,
+      targetType: TargetType.None,
+      condition: "Legion",
+    },
+  ],
+  rarity: Rarity.Common,
+  rulesText: "Legion: When you play me, play two 1 Might Recruit unit tokens here.",
   artAsset: "",
 };
 
@@ -232,20 +283,20 @@ export const stoneGolemUnit: CardDefinition = {
 // Spells
 // ---------------------------------------------------------------------------
 
-export const mysticShotSpell: CardDefinition = {
-  id: "origins-spell-mystic-shot",
-  name: "Mystic Shot",
-  fullName: "Mystic Shot",
+export const getExcitedSpell: CardDefinition = {
+  id: "origins-spell-get-excited",
+  name: "Get Excited!",
+  fullName: "Get Excited!",
   set: CardSet.Origins,
   type: CardType.Spell,
   domains: [Domain.Fury],
-  cost: { energyCost: 1, powerCosts: [{ domain: Domain.Fury, amount: 1 }] },
+  cost: { energyCost: 2, powerCosts: [{ domain: Domain.Fury, amount: 1 }] },
   keywords: [],
   abilities: [
     {
-      id: "mystic-shot-effect",
-      name: "Mystic Shot",
-      description: "Deal 2 damage to a unit.",
+      id: "get-excited-effect",
+      name: "Get Excited!",
+      description: "Discard 1. Deal its Energy cost as damage to a unit at a battlefield.",
       trigger: TriggerType.OnPlay,
       targetType: TargetType.AnyUnit,
       targetCount: 1,
@@ -253,31 +304,31 @@ export const mysticShotSpell: CardDefinition = {
   ],
   spellTiming: SpellTiming.Action,
   rarity: Rarity.Common,
-  rulesText: "Action — Deal 2 damage to a unit.",
+  rulesText: "Action — Discard 1. Deal its Energy cost as damage to a unit at a battlefield.",
   artAsset: "",
 };
 
-export const denialSpell: CardDefinition = {
-  id: "origins-spell-denial",
-  name: "Deny",
-  fullName: "Deny",
+export const defySpell: CardDefinition = {
+  id: "origins-spell-defy",
+  name: "Defy",
+  fullName: "Defy",
   set: CardSet.Origins,
   type: CardType.Spell,
   domains: [Domain.Calm],
-  cost: { energyCost: 2, powerCosts: [{ domain: Domain.Calm, amount: 1 }] },
+  cost: { energyCost: 1, powerCosts: [{ domain: Domain.Calm, amount: 1 }] },
   keywords: [],
   abilities: [
     {
-      id: "deny-effect",
-      name: "Deny",
-      description: "Counter a spell.",
+      id: "defy-effect",
+      name: "Defy",
+      description: "Counter a spell that costs no more than 4 Energy and no more than 1 Power.",
       trigger: TriggerType.OnPlay,
       targetType: TargetType.None,
     },
   ],
   spellTiming: SpellTiming.Reaction,
-  rarity: Rarity.Rare,
-  rulesText: "Reaction — Counter a spell on the chain.",
+  rarity: Rarity.Common,
+  rulesText: "Reaction — Counter a spell that costs no more than 4 Energy and no more than 1 Power.",
   artAsset: "",
 };
 
@@ -285,27 +336,27 @@ export const denialSpell: CardDefinition = {
 // Gear
 // ---------------------------------------------------------------------------
 
-export const longSwordGear: CardDefinition = {
-  id: "origins-gear-long-sword",
-  name: "Long Sword",
-  fullName: "Long Sword",
+export const ironBallistaGear: CardDefinition = {
+  id: "origins-gear-iron-ballista",
+  name: "Iron Ballista",
+  fullName: "Iron Ballista",
   set: CardSet.Origins,
   type: CardType.Gear,
-  domains: [Domain.Body],
+  domains: [Domain.Fury],
   cost: { energyCost: 1, powerCosts: [] },
   keywords: [],
   abilities: [
     {
-      id: "long-sword-effect",
-      name: "Sharp Edge",
-      description: "Exhaust: a unit you control gets +1 Might this turn.",
+      id: "iron-ballista-effect",
+      name: "Ballista Shot",
+      description: "Tap: A unit you control gets +1 Might this turn.",
       trigger: TriggerType.Activated,
       targetType: TargetType.FriendlyUnit,
       targetCount: 1,
     },
   ],
   rarity: Rarity.Common,
-  rulesText: "Exhaust: a unit you control gets +1 Might this turn.",
+  rulesText: "Tap: A unit you control gets +1 Might this turn.",
   artAsset: "",
 };
 
@@ -407,10 +458,10 @@ export const orderRune: CardDefinition = {
 // Battlefields
 // ---------------------------------------------------------------------------
 
-export const piltoverBattlefield: CardDefinition = {
-  id: "origins-bf-piltover-plaza",
-  name: "Piltover Plaza",
-  fullName: "Piltover Plaza",
+export const grandPlazaBattlefield: CardDefinition = {
+  id: "origins-bf-grand-plaza",
+  name: "The Grand Plaza",
+  fullName: "The Grand Plaza",
   set: CardSet.Origins,
   type: CardType.Battlefield,
   domains: [],
@@ -418,23 +469,23 @@ export const piltoverBattlefield: CardDefinition = {
   keywords: [],
   abilities: [
     {
-      id: "piltover-plaza-effect",
-      name: "City of Progress",
-      description: "When conquered: the conquering player draws a card.",
+      id: "grand-plaza-effect",
+      name: "Grand Plaza",
+      description: "When you hold here, if you have 7+ units here, you win the game.",
       trigger: TriggerType.OnBattlefieldConquered,
       targetType: TargetType.None,
     },
   ],
-  battlefieldEffect: "When conquered: the conquering player draws a card.",
+  battlefieldEffect: "When you hold here, if you have 7+ units here, you win the game.",
   rarity: Rarity.Uncommon,
-  rulesText: "When conquered: the conquering player draws a card.",
+  rulesText: "When you hold here, if you have 7+ units here, you win the game.",
   artAsset: "",
 };
 
-export const zaunBattlefield: CardDefinition = {
-  id: "origins-bf-zaun-streets",
-  name: "Zaun Streets",
-  fullName: "Zaun Streets",
+export const zaunWarrensBattlefield: CardDefinition = {
+  id: "origins-bf-zaun-warrens",
+  name: "Zaun Warrens",
+  fullName: "Zaun Warrens",
   set: CardSet.Origins,
   type: CardType.Battlefield,
   domains: [],
@@ -442,16 +493,16 @@ export const zaunBattlefield: CardDefinition = {
   keywords: [],
   abilities: [
     {
-      id: "zaun-streets-effect",
-      name: "Toxic Fumes",
-      description: "When conquered: deal 1 damage to all units here.",
+      id: "zaun-warrens-effect",
+      name: "Zaun Warrens",
+      description: "When you conquer here, discard 1 then draw 1.",
       trigger: TriggerType.OnBattlefieldConquered,
       targetType: TargetType.None,
     },
   ],
-  battlefieldEffect: "When conquered: deal 1 damage to all units here.",
-  rarity: Rarity.Common,
-  rulesText: "When conquered: deal 1 damage to all units here.",
+  battlefieldEffect: "When you conquer here, discard 1 then draw 1.",
+  rarity: Rarity.Uncommon,
+  rulesText: "When you conquer here, discard 1 then draw 1.",
   artAsset: "",
 };
 
@@ -466,17 +517,18 @@ export const originsCards: CardDefinition[] = [
   leeSinLegend,
   // Champions
   jinxChampionFury,
+  caitlynChampion,
   // Units
-  caitlynUnit,
-  piltoverEnforcerUnit,
-  zauniteScrapperUnit,
-  shadowAssassinUnit,
-  stoneGolemUnit,
+  chemtechEnforcerUnit,
+  noxusSaboteurUnit,
+  eagerApprenticeUnit,
+  bilgewaterBullyUnit,
+  vanguardCaptainUnit,
   // Spells
-  mysticShotSpell,
-  denialSpell,
+  getExcitedSpell,
+  defySpell,
   // Gear
-  longSwordGear,
+  ironBallistaGear,
   // Runes
   furyRune,
   calmRune,
@@ -485,6 +537,6 @@ export const originsCards: CardDefinition[] = [
   chaosRune,
   orderRune,
   // Battlefields
-  piltoverBattlefield,
-  zaunBattlefield,
+  grandPlazaBattlefield,
+  zaunWarrensBattlefield,
 ];

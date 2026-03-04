@@ -82,8 +82,8 @@ const copies = (id: string, n: number): string[] => Array(n).fill(id);
 function createDefaultDeck(): DeckList {
   const deck: string[] = [];
   for (let i = 0; i < 20; i++) {
-    deck.push("origins-unit-zaunite-scrapper");
-    deck.push("origins-spell-mystic-shot");
+    deck.push("origins-unit-chemtech-enforcer");
+    deck.push("origins-spell-get-excited");
   }
   return {
     name: "Jinx Aggro",
@@ -91,7 +91,7 @@ function createDefaultDeck(): DeckList {
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: deck,
     runeDeckIds: [...copies("origins-rune-fury", 6), ...copies("origins-rune-chaos", 6)],
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 }

@@ -198,8 +198,8 @@ export function setupTestGame(
   const defaultDeck = (() => {
     const ids: string[] = [];
     for (let i = 0; i < 20; i++) {
-      ids.push("origins-unit-zaunite-scrapper");
-      ids.push("origins-spell-mystic-shot");
+      ids.push("origins-unit-chemtech-enforcer");
+      ids.push("origins-spell-get-excited");
     }
     return ids;
   })();
@@ -212,7 +212,7 @@ export function setupTestGame(
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: p1DeckIds ?? defaultDeck,
     runeDeckIds: p1RuneIds ?? defaultRunes,
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 
@@ -222,7 +222,7 @@ export function setupTestGame(
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: p2DeckIds ?? defaultDeck,
     runeDeckIds: p2RuneIds ?? defaultRunes,
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 

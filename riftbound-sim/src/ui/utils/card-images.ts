@@ -10,17 +10,18 @@ export const cardImageUrls: Record<string, string> = {
   "origins-legend-leesin": `${CDN}/OGN-257.webp`,
   // Champions
   "origins-champ-jinx-fury": `${CDN}/OGN-030.webp`,
+  "origins-champ-caitlyn": `${CDN}/OGN-068.webp`,
   // Units
-  "origins-unit-caitlyn": `${CDN}/OGN-068.webp`,
-  "origins-unit-zaunite-scrapper": `${CDN}/OGN-202.webp`,
-  "origins-unit-piltover-enforcer": `${CDN}/OGN-117.webp`,
-  "origins-unit-shadow-assassin": `${CDN}/OGN-078.webp`,
-  "origins-unit-stone-golem": `${CDN}/OGN-151.webp`,
+  "origins-unit-chemtech-enforcer": `${CDN}/OGN-003.webp`,
+  "origins-unit-noxus-saboteur": `${CDN}/OGN-018.webp`,
+  "origins-unit-eager-apprentice": `${CDN}/OGN-084.webp`,
+  "origins-unit-bilgewater-bully": `${CDN}/OGN-125.webp`,
+  "origins-unit-vanguard-captain": `${CDN}/OGN-218.webp`,
   // Spells
-  "origins-spell-mystic-shot": `${CDN}/OGN-012.webp`,
-  "origins-spell-denial": `${CDN}/OGN-045.webp`,
+  "origins-spell-get-excited": `${CDN}/OGN-008.webp`,
+  "origins-spell-defy": `${CDN}/OGN-045.webp`,
   // Gear
-  "origins-gear-long-sword": `${CDN}/OGN-003.webp`,
+  "origins-gear-iron-ballista": `${CDN}/OGN-017.webp`,
   // Runes
   "origins-rune-fury": `${CDN}/OGN-007.webp`,
   "origins-rune-calm": `${CDN}/OGN-042.webp`,
@@ -29,8 +30,8 @@ export const cardImageUrls: Record<string, string> = {
   "origins-rune-chaos": `${CDN}/OGN-166.webp`,
   "origins-rune-order": `${CDN}/OGN-214.webp`,
   // Battlefields
-  "origins-bf-piltover-plaza": `${CDN}/OGN-297.webp`,
-  "origins-bf-zaun-streets": `${CDN}/OGN-298.webp`,
+  "origins-bf-grand-plaza": `${CDN}/OGN-293.webp`,
+  "origins-bf-zaun-warrens": `${CDN}/OGN-298.webp`,
 };
 
 export function getCardImageUrl(defId: string): string | undefined {

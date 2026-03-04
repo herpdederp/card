@@ -14,10 +14,10 @@
 export enum Domain {
   Fury = "fury",       // Red — aggro, discard, reckless offense
   Calm = "calm",       // Green — defense, hold, movement tricks, reactions
-  Mind = "mind",       // Purple — hidden, bluffing, removal, long game
+  Mind = "mind",       // Blue — hidden, bluffing, removal, long game
   Body = "body",       // Orange — ramp, big units, raw combat power
-  Chaos = "chaos",     // ?? — rule-breaking, trash interaction, unpredictable
-  Order = "order",     // ?? — structure, buffs, board control
+  Chaos = "chaos",     // Purple — rule-breaking, trash interaction, unpredictable
+  Order = "order",     // Yellow — structure, buffs, board control
 }
 
 // ---------------------------------------------------------------------------
@@ -62,13 +62,24 @@ export enum Rarity {
 
 /** Named keyword abilities that cards can have. */
 export enum Keyword {
+  /** Pay additional domain cost to have unit enter ready (not exhausted). */
+  Accelerate = "accelerate",
+  /** +X Might while this unit is an attacker. */
+  Assault = "assault",
+  /** Opponents must pay a rune to choose this unit with a spell or ability. */
+  Deflect = "deflect",
   /** Unit can move between Battlefields (not just Base ↔ Battlefield). */
   Ganking = "ganking",
   /** Card can be played face-down to a Battlefield's Facedown Zone. */
   Hidden = "hidden",
+  /** Effect only triggers if you've played another card this turn. */
+  Legion = "legion",
+  /** Survives the first time it would be killed (loses Shield instead). */
+  Shield = "shield",
   /** Tied to a specific Legend. Max 3 Signature cards per deck. */
   Signature = "signature",
-  // -- Spiritforged+ keywords will be added here --
+  /** Killed at start of controller's Beginning Phase, before scoring. */
+  Temporary = "temporary",
 }
 
 // ---------------------------------------------------------------------------

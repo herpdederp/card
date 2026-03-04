@@ -2,9 +2,9 @@
 // Riftbound TCG — Example: Abilities & Chain System Demo
 // ============================================================================
 // Demonstrates the Phase 2 ability system with three scenarios:
-//   Demo 1: Spell on chain (Mystic Shot → damage → destroy)
-//   Demo 2: Activated ability (Long Sword → +1 Might buff)
-//   Demo 3: Counter-spell chain (Mystic Shot + Deny → LIFO resolution)
+//   Demo 1: Spell on chain (Get Excited! → damage → destroy)
+//   Demo 2: Activated ability (Iron Ballista → +1 Might buff)
+//   Demo 3: Counter-spell chain (Get Excited! + Defy → LIFO resolution)
 // ============================================================================
 
 import { CardDatabase } from "./cards/database.js";
@@ -96,19 +96,19 @@ function setupGame(engine: RiftboundEngine, p1Deck: DeckList, p2Deck: DeckList):
 }
 
 // ===========================================================================
-// DEMO 1: Mystic Shot — Spell on Chain → Resolve → Damage
+// DEMO 1: Get Excited! — Spell on Chain → Resolve → Damage
 // ===========================================================================
 
 console.log("\n" + "=".repeat(70));
-console.log("DEMO 1: Mystic Shot — Spell on Chain");
+console.log("DEMO 1: Get Excited! — Spell on Chain");
 console.log("=".repeat(70));
 
 {
-  // Deck: interleaved Scrappers + Mystic Shots
+  // Deck: interleaved Chemtech Enforcers + Get Excited! spells
   const deck: string[] = [];
   for (let i = 0; i < 20; i++) {
-    deck.push("origins-unit-zaunite-scrapper");
-    deck.push("origins-spell-mystic-shot");
+    deck.push("origins-unit-chemtech-enforcer");
+    deck.push("origins-spell-get-excited");
   }
   const jinxDeck: DeckList = {
     name: "Jinx Aggro",
@@ -116,7 +116,7 @@ console.log("=".repeat(70));
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: deck,
     runeDeckIds: [...copies("origins-rune-fury", 6), ...copies("origins-rune-chaos", 6)],
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 
@@ -124,30 +124,34 @@ console.log("=".repeat(70));
   const { p1, p2 } = setupGame(engine, jinxDeck, jinxDeck);
   const state = engine.getState();
 
-  // Turn 1: P1 plays a Scrapper
+  // Turn 1: P1 plays a Chemtech Enforcer
   engine.processAction({ type: "exhaust_rune", player: p1, runeId: state.players.get(p1)!.runePool[0] });
-  const scrapper1 = findInHand(engine, p1, "origins-unit-zaunite-scrapper");
-  if (scrapper1) engine.processAction({ type: "play_card", player: p1, cardInstanceId: scrapper1 });
+  engine.processAction({ type: "exhaust_rune", player: p1, runeId: state.players.get(p1)!.runePool[1] });
+  const enforcer1 = findInHand(engine, p1, "origins-unit-chemtech-enforcer");
+  if (enforcer1) engine.processAction({ type: "play_card", player: p1, cardInstanceId: enforcer1 });
   engine.processAction({ type: "declare_done", player: p1 });
 
-  // Turn 2: P2 plays a Scrapper
+  // Turn 2: P2 plays a Chemtech Enforcer
   engine.processAction({ type: "exhaust_rune", player: p2, runeId: state.players.get(p2)!.runePool[0] });
-  const scrapper2 = findInHand(engine, p2, "origins-unit-zaunite-scrapper");
-  if (scrapper2) engine.processAction({ type: "play_card", player: p2, cardInstanceId: scrapper2 });
+  engine.processAction({ type: "exhaust_rune", player: p2, runeId: state.players.get(p2)!.runePool[1] });
+  const enforcer2 = findInHand(engine, p2, "origins-unit-chemtech-enforcer");
+  if (enforcer2) engine.processAction({ type: "play_card", player: p2, cardInstanceId: enforcer2 });
   engine.processAction({ type: "declare_done", player: p2 });
 
-  // Turn 3: P1 casts Mystic Shot (1E + 1 Fury) targeting P2's Scrapper
-  console.log(`\n>>> Casting Mystic Shot at opponent's Scrapper...`);
+  // Turn 3: P1 casts Get Excited! (2E + 1 Fury) targeting P2's Enforcer
+  console.log(`\n>>> Casting Get Excited! at opponent's Chemtech Enforcer...`);
   const rune1 = findReadyRune(engine, p1);
   if (rune1) engine.processAction({ type: "exhaust_rune", player: p1, runeId: rune1 });
   const rune2 = findReadyRune(engine, p1);
-  if (rune2) engine.processAction({ type: "recycle_rune", player: p1, runeId: rune2 });
+  if (rune2) engine.processAction({ type: "exhaust_rune", player: p1, runeId: rune2 });
+  const rune3 = findReadyRune(engine, p1);
+  if (rune3) engine.processAction({ type: "recycle_rune", player: p1, runeId: rune3 });
 
-  const mysticShot = findInHand(engine, p1, "origins-spell-mystic-shot");
+  const getExcited = findInHand(engine, p1, "origins-spell-get-excited");
   const target = state.players.get(p2)!.base[0];
 
-  if (mysticShot && target) {
-    engine.processAction({ type: "play_card", player: p1, cardInstanceId: mysticShot, targets: [target] });
+  if (getExcited && target) {
+    engine.processAction({ type: "play_card", player: p1, cardInstanceId: getExcited, targets: [target] });
     console.log(`    Chain: ${state.chain.length} entry`);
 
     // Both pass → spell resolves
@@ -160,19 +164,19 @@ console.log("=".repeat(70));
 }
 
 // ===========================================================================
-// DEMO 2: Long Sword — Activated Ability (Exhaust → +1 Might)
+// DEMO 2: Iron Ballista — Activated Ability (Exhaust → +1 Might)
 // ===========================================================================
 
 console.log("\n\n" + "=".repeat(70));
-console.log("DEMO 2: Long Sword — Activated Ability");
+console.log("DEMO 2: Iron Ballista — Activated Ability");
 console.log("=".repeat(70));
 
 {
-  // Deck: interleaved Scrappers + Long Swords
+  // Deck: interleaved Chemtech Enforcers + Iron Ballistas
   const deck: string[] = [];
   for (let i = 0; i < 20; i++) {
-    deck.push("origins-unit-zaunite-scrapper");
-    deck.push("origins-gear-long-sword");
+    deck.push("origins-unit-chemtech-enforcer");
+    deck.push("origins-gear-iron-ballista");
   }
   const gearDeck: DeckList = {
     name: "Gear Demo",
@@ -180,7 +184,7 @@ console.log("=".repeat(70));
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: deck,
     runeDeckIds: [...copies("origins-rune-fury", 6), ...copies("origins-rune-chaos", 6)],
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 
@@ -188,34 +192,34 @@ console.log("=".repeat(70));
   const { p1, p2 } = setupGame(engine, gearDeck, gearDeck);
   const state = engine.getState();
 
-  // Turn 1: P1 plays Scrapper (1E) + Long Sword (1E) using both runes
+  // Turn 1: P1 plays Chemtech Enforcer (2E) + Iron Ballista (1E)
   engine.processAction({ type: "exhaust_rune", player: p1, runeId: state.players.get(p1)!.runePool[0] });
   engine.processAction({ type: "exhaust_rune", player: p1, runeId: state.players.get(p1)!.runePool[1] });
 
-  const scrapper = findInHand(engine, p1, "origins-unit-zaunite-scrapper");
-  const longSword = findInHand(engine, p1, "origins-gear-long-sword");
+  const enforcer = findInHand(engine, p1, "origins-unit-chemtech-enforcer");
+  const ballista = findInHand(engine, p1, "origins-gear-iron-ballista");
 
-  if (scrapper && longSword) {
-    engine.processAction({ type: "play_card", player: p1, cardInstanceId: scrapper });
-    engine.processAction({ type: "play_card", player: p1, cardInstanceId: longSword });
+  if (enforcer && ballista) {
+    engine.processAction({ type: "play_card", player: p1, cardInstanceId: enforcer });
+    engine.processAction({ type: "play_card", player: p1, cardInstanceId: ballista });
 
-    console.log(`\n>>> P1 base: ${state.players.get(p1)!.base.length} cards (Scrapper + Long Sword)`);
+    console.log(`\n>>> P1 base: ${state.players.get(p1)!.base.length} cards (Enforcer + Iron Ballista)`);
 
-    // Check Scrapper's Might before buff
-    const scrapperDef = engine.getCardDef(scrapper);
-    const scrapperCard = state.cards.get(scrapper)!;
-    const baseMight = scrapperDef?.might ?? 0;
-    const mightBefore = baseMight + scrapperCard.modifiers.reduce((sum, m) => sum + m.mightDelta, 0);
-    console.log(`    Scrapper Might before: ${mightBefore}`);
+    // Check Enforcer's Might before buff
+    const enforcerDef = engine.getCardDef(enforcer);
+    const enforcerCard = state.cards.get(enforcer)!;
+    const baseMight = enforcerDef?.might ?? 0;
+    const mightBefore = baseMight + enforcerCard.modifiers.reduce((sum, m) => sum + m.mightDelta, 0);
+    console.log(`    Enforcer Might before: ${mightBefore}`);
 
-    // Activate Long Sword: Exhaust → target friendly unit gets +1 Might
-    console.log(`\n>>> Activating Long Sword on Scrapper...`);
+    // Activate Iron Ballista: Exhaust → target friendly unit gets +1 Might
+    console.log(`\n>>> Activating Iron Ballista on Enforcer...`);
     const activated = engine.processAction({
       type: "activate_ability",
       player: p1,
-      sourceId: longSword,
-      abilityId: "long-sword-effect",
-      targets: [scrapper],
+      sourceId: ballista,
+      abilityId: "iron-ballista-effect",
+      targets: [enforcer],
     });
     console.log(`    Activated: ${activated}`);
     console.log(`    Chain: ${state.chain.length} entry`);
@@ -224,33 +228,31 @@ console.log("=".repeat(70));
     engine.processAction({ type: "pass_priority", player: p2 });
     engine.processAction({ type: "pass_priority", player: p1 });
 
-    const mightAfter = baseMight + scrapperCard.modifiers.reduce((sum, m) => sum + m.mightDelta, 0);
-    console.log(`\n>>> RESULT: Scrapper Might after: ${mightAfter} (+1 buff) ✓`);
-    console.log(`    Long Sword exhausted: ${state.cards.get(longSword)!.exhausted}`);
-    console.log(`    Buff duration: ${scrapperCard.modifiers[0]?.duration}`);
+    const mightAfter = baseMight + enforcerCard.modifiers.reduce((sum, m) => sum + m.mightDelta, 0);
+    console.log(`\n>>> RESULT: Enforcer Might after: ${mightAfter} (+1 buff) ✓`);
+    console.log(`    Iron Ballista exhausted: ${state.cards.get(ballista)!.exhausted}`);
+    console.log(`    Buff duration: ${enforcerCard.modifiers[0]?.duration}`);
   } else {
-    console.log("    Missing Scrapper or Long Sword in hand — skipping");
+    console.log("    Missing Enforcer or Iron Ballista in hand — skipping");
   }
 }
 
 // ===========================================================================
-// DEMO 3: Mystic Shot + Deny — Counter-Spell Chain (LIFO)
+// DEMO 3: Get Excited! + Defy — Counter-Spell Chain (LIFO)
 // ===========================================================================
 
 console.log("\n\n" + "=".repeat(70));
-console.log("DEMO 3: Mystic Shot + Deny — Counter-Spell Chain");
+console.log("DEMO 3: Get Excited! + Defy — Counter-Spell Chain");
 console.log("=".repeat(70));
 
 {
-  // Both players get a mixed deck so the active player (attacker) has
-  // Mystic Shot and the non-active player (denier) has Deny, regardless
-  // of which player goes first.
+  // Both players get a mixed deck
   const mixedDeck: string[] = [];
   for (let i = 0; i < 10; i++) {
-    mixedDeck.push("origins-unit-zaunite-scrapper");
-    mixedDeck.push("origins-spell-mystic-shot");
-    mixedDeck.push("origins-unit-zaunite-scrapper");
-    mixedDeck.push("origins-spell-denial");
+    mixedDeck.push("origins-unit-chemtech-enforcer");
+    mixedDeck.push("origins-spell-get-excited");
+    mixedDeck.push("origins-unit-chemtech-enforcer");
+    mixedDeck.push("origins-spell-defy");
   }
 
   const sharedDeck: DeckList = {
@@ -259,7 +261,7 @@ console.log("=".repeat(70));
     chosenChampionId: "origins-champ-jinx-fury",
     mainDeckIds: mixedDeck,
     runeDeckIds: [...copies("origins-rune-fury", 4), ...copies("origins-rune-calm", 4), ...copies("origins-rune-chaos", 4)],
-    battlefieldIds: ["origins-bf-zaun-streets", "origins-bf-piltover-plaza", "origins-bf-zaun-streets"],
+    battlefieldIds: ["origins-bf-zaun-warrens", "origins-bf-grand-plaza", "origins-bf-zaun-warrens"],
     sideboardIds: [],
   };
 
@@ -267,83 +269,85 @@ console.log("=".repeat(70));
   const { p1: attacker, p2: denier } = setupGame(engine, sharedDeck, sharedDeck);
   const state = engine.getState();
 
-  // Turn 1: Attacker plays a Scrapper
+  // Turn 1: Attacker plays a Chemtech Enforcer
   engine.processAction({ type: "exhaust_rune", player: attacker, runeId: state.players.get(attacker)!.runePool[0] });
-  const aScrapper = findInHand(engine, attacker, "origins-unit-zaunite-scrapper");
-  if (aScrapper) engine.processAction({ type: "play_card", player: attacker, cardInstanceId: aScrapper });
+  engine.processAction({ type: "exhaust_rune", player: attacker, runeId: state.players.get(attacker)!.runePool[1] });
+  const aEnforcer = findInHand(engine, attacker, "origins-unit-chemtech-enforcer");
+  if (aEnforcer) engine.processAction({ type: "play_card", player: attacker, cardInstanceId: aEnforcer });
   engine.processAction({ type: "declare_done", player: attacker });
 
-  // Turn 2: Denier plays a Scrapper
+  // Turn 2: Denier plays a Chemtech Enforcer
   engine.processAction({ type: "exhaust_rune", player: denier, runeId: state.players.get(denier)!.runePool[0] });
-  const dScrapper = findInHand(engine, denier, "origins-unit-zaunite-scrapper");
-  if (dScrapper) engine.processAction({ type: "play_card", player: denier, cardInstanceId: dScrapper });
+  engine.processAction({ type: "exhaust_rune", player: denier, runeId: state.players.get(denier)!.runePool[1] });
+  const dEnforcer = findInHand(engine, denier, "origins-unit-chemtech-enforcer");
+  if (dEnforcer) engine.processAction({ type: "play_card", player: denier, cardInstanceId: dEnforcer });
   engine.processAction({ type: "declare_done", player: denier });
 
-  // Turn 3: Attacker casts Mystic Shot → Denier responds with Deny
-  console.log(`\n>>> ${attacker} casts Mystic Shot at ${denier}'s Scrapper...`);
+  // Turn 3: Attacker casts Get Excited! → Denier responds with Defy
+  console.log(`\n>>> ${attacker} casts Get Excited! at ${denier}'s Enforcer...`);
 
-  // Pay for Mystic Shot (1E + 1 Fury)
+  // Pay for Get Excited! (2E + 1 Fury)
   const aRune1 = findReadyRune(engine, attacker);
   if (aRune1) engine.processAction({ type: "exhaust_rune", player: attacker, runeId: aRune1 });
   const aRune2 = findReadyRune(engine, attacker);
-  if (aRune2) engine.processAction({ type: "recycle_rune", player: attacker, runeId: aRune2 });
+  if (aRune2) engine.processAction({ type: "exhaust_rune", player: attacker, runeId: aRune2 });
+  const aRune3 = findReadyRune(engine, attacker);
+  if (aRune3) engine.processAction({ type: "recycle_rune", player: attacker, runeId: aRune3 });
 
-  const mysticShot = findInHand(engine, attacker, "origins-spell-mystic-shot");
-  const targetScrapper = state.players.get(denier)!.base[0];
+  const getExcited = findInHand(engine, attacker, "origins-spell-get-excited");
+  const targetEnforcer = state.players.get(denier)!.base[0];
 
-  if (mysticShot && targetScrapper) {
+  if (getExcited && targetEnforcer) {
     engine.processAction({
       type: "play_card",
       player: attacker,
-      cardInstanceId: mysticShot,
-      targets: [targetScrapper],
+      cardInstanceId: getExcited,
+      targets: [targetEnforcer],
     });
-    console.log(`    Chain: [Mystic Shot] — ${state.chain.length} entry`);
+    console.log(`    Chain: [Get Excited!] — ${state.chain.length} entry`);
     console.log(`    Priority: ${state.turn.priorityPlayer} (denier = ${denier})`);
 
-    // Pre-load denier's resources for Deny (2E + 1 Calm).
-    // In a real game these would be accumulated from rune operations over
-    // previous turns; here we set them directly to focus on the chain demo.
+    // Pre-load denier's resources for Defy (1E + 1 Calm).
     const denierState = state.players.get(denier)!;
-    denierState.currentEnergy = 2;
+    denierState.currentEnergy = 1;
     denierState.currentPower.push({ domain: Domain.Calm, amount: 1 });
 
-    const deny = findInHand(engine, denier, "origins-spell-denial");
-    if (deny) {
-      console.log(`\n>>> ${denier} responds with Deny!`);
-      const denyPlayed = engine.processAction({ type: "play_card", player: denier, cardInstanceId: deny });
-      console.log(`    Deny played: ${denyPlayed}`);
-      console.log(`    Chain: [Mystic Shot, Deny] — ${state.chain.length} entries`);
+    const defy = findInHand(engine, denier, "origins-spell-defy");
+    if (defy) {
+      console.log(`\n>>> ${denier} responds with Defy!`);
+      const defyPlayed = engine.processAction({ type: "play_card", player: denier, cardInstanceId: defy });
+      console.log(`    Defy played: ${defyPlayed}`);
+      console.log(`    Chain: [Get Excited!, Defy] — ${state.chain.length} entries`);
 
-      // Both players pass → top of chain (Deny) resolves first (LIFO)
-      console.log(`\n>>> Both players pass → Deny resolves first...`);
+      // Both players pass → top of chain (Defy) resolves first (LIFO)
+      console.log(`\n>>> Both players pass → Defy resolves first...`);
       engine.processAction({ type: "pass_priority", player: attacker });
       engine.processAction({ type: "pass_priority", player: denier });
 
-      console.log(`    After Deny: chain has ${state.chain.length} entry`);
+      console.log(`    After Defy: chain has ${state.chain.length} entry`);
       if (state.chain.length > 0) {
-        console.log(`    Mystic Shot cancelled: ${state.chain[0].cancelled}`);
+        console.log(`    Get Excited! cancelled: ${state.chain[0].cancelled}`);
       }
 
-      // Both pass again → cancelled Mystic Shot pops off (skipped)
-      console.log(`>>> Both pass again → cancelled Mystic Shot resolves (skipped)...`);
+      // Both pass again → cancelled Get Excited! pops off (skipped)
+      console.log(`>>> Both pass again → cancelled Get Excited! resolves (skipped)...`);
       engine.processAction({ type: "pass_priority", player: state.turn.priorityPlayer });
       const nextP = state.turn.priorityPlayer;
       engine.processAction({ type: "pass_priority", player: nextP });
 
       console.log(`    Chain empty: ${state.chain.length === 0}`);
 
-      const alive = denierState.base.includes(targetScrapper);
-      const inTrash = denierState.trash.includes(targetScrapper);
-      console.log(`\n>>> RESULT: Scrapper alive = ${alive}, in trash = ${inTrash}`);
-      if (alive) console.log(`    Deny countered Mystic Shot — Scrapper survived! ✓`);
+      const alive = denierState.base.includes(targetEnforcer);
+      const inTrash = denierState.trash.includes(targetEnforcer);
+      console.log(`\n>>> RESULT: Enforcer alive = ${alive}, in trash = ${inTrash}`);
+      if (alive) console.log(`    Defy countered Get Excited! — Enforcer survived! ✓`);
     } else {
-      console.log(`    No Deny in hand — skipping counter demo`);
+      console.log(`    No Defy in hand — skipping counter demo`);
       engine.processAction({ type: "pass_priority", player: denier });
       engine.processAction({ type: "pass_priority", player: attacker });
     }
   } else {
-    console.log("    Missing Mystic Shot or target — skipping demo");
+    console.log("    Missing Get Excited! or target — skipping demo");
   }
 }
 
