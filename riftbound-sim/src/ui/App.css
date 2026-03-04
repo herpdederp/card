@@ -37,7 +37,7 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* --------------------------------------------------------------------------
@@ -151,6 +151,70 @@ body {
 .score-zone { grid-area: score; }
 .hand-zone { grid-area: hand; }
 .log-zone { grid-area: log; }
+
+@media (max-width: 700px) {
+  .game-board {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "phase"
+      "score"
+      "opponent"
+      "bfields"
+      "chain"
+      "base"
+      "runes"
+      "hand"
+      "log";
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .phase-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .battlefield-strip {
+    flex-direction: column;
+  }
+
+  .battlefield {
+    min-width: unset;
+  }
+
+  .card {
+    width: 80px;
+    min-height: 110px;
+  }
+
+  .card-art { height: 40px; }
+
+  .card.mini {
+    width: 54px;
+    min-height: 70px;
+  }
+
+  .card.mini .card-art { height: 28px; }
+
+  .log-zone {
+    max-height: 120px;
+  }
+
+  .mulligan-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mulligan-overlay {
+    overflow-y: auto;
+    padding: 16px;
+  }
+}
 
 /* --------------------------------------------------------------------------
    Phase Bar
