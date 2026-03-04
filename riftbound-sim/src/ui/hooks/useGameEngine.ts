@@ -17,6 +17,7 @@ import { CardScriptRegistry } from "../../cards/abilities.js";
 import { RiftboundEngine } from "../../engine/engine.js";
 import { originsCards } from "../../cards/origins/sample-cards.js";
 import { registerOriginsScripts } from "../../cards/origins/sample-scripts.js";
+import { generateAIAction } from "../ai/bot.js";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -50,13 +51,14 @@ export interface GameUI {
   targetingContext: TargetingContext | null;
   moveContext: MoveContext | null;
   mulliganSelection: CardInstanceId[];
+  aiPlayer: PlayerId | null;
 
   // Engine access
   getCardDef: (instanceId: CardInstanceId) => CardDefinition | undefined;
   getDefById: (defId: string) => CardDefinition | undefined;
 
   // Actions
-  startGame: () => void;
+  startGame: (vsAI?: boolean) => void;
   dispatch: (action: GameAction) => boolean;
 
   // UI interaction
@@ -121,6 +123,7 @@ export function useGameEngine(): GameUI {
   const [targetingContext, setTargetingContext] = useState<TargetingContext | null>(null);
   const [moveContext, setMoveContext] = useState<MoveContext | null>(null);
   const [mulliganSelection, setMulliganSelection] = useState<CardInstanceId[]>([]);
+  const [aiPlayer, setAiPlayer] = useState<PlayerId | null>(null);
   const [, setRenderTick] = useState(0);
 
   const refreshState = useCallback((viewer?: PlayerId) => {
@@ -141,7 +144,7 @@ export function useGameEngine(): GameUI {
     return dbRef.current?.getById(defId);
   }, []);
 
-  const startGame = useCallback(() => {
+  const startGame = useCallback((vsAI?: boolean) => {
     const db = dbRef.current!;
     const scripts = scriptsRef.current!;
     const engine = new RiftboundEngine(db, scripts);
@@ -162,7 +165,7 @@ export function useGameEngine(): GameUI {
 
     engine.setupGame(
       {
-        mode: GameMode.Standard1v1,
+        mode: vsAI ? GameMode.Practice : GameMode.Standard1v1,
         playerCount: 2,
         winTarget: 8,
         turnTimerSeconds: 0,
@@ -173,10 +176,18 @@ export function useGameEngine(): GameUI {
     );
 
     setEvents([]);
-    setInteractionMode("selecting_mulligan");
     setMulliganSelection([]);
     const viewer: PlayerId = "player1";
     setCurrentViewer(viewer);
+
+    if (vsAI) {
+      setAiPlayer("player2");
+      setInteractionMode("selecting_mulligan");
+    } else {
+      setAiPlayer(null);
+      setInteractionMode("selecting_mulligan");
+    }
+
     refreshState(viewer);
   }, [refreshState]);
 
@@ -185,20 +196,26 @@ export function useGameEngine(): GameUI {
     if (!engine) return false;
     const result = engine.processAction(action);
 
-    // Auto-switch viewer to active player when turn changes
     const state = engine.getState();
     const newActive = state.turn.activePlayer;
-    setCurrentViewer(prev => {
-      if (prev !== newActive && state.turn.phase !== "setup") {
-        refreshState(newActive);
-        return newActive;
-      }
-      refreshState(prev);
-      return prev;
-    });
+
+    if (aiPlayer) {
+      // AI mode: keep viewer locked to human player
+      refreshState("player1");
+    } else {
+      // Hotseat: auto-switch viewer to active player
+      setCurrentViewer(prev => {
+        if (prev !== newActive && state.turn.phase !== "setup") {
+          refreshState(newActive);
+          return newActive;
+        }
+        refreshState(prev);
+        return prev;
+      });
+    }
 
     return result;
-  }, [refreshState]);
+  }, [refreshState, aiPlayer]);
 
   const beginPlayCard = useCallback((cardId: CardInstanceId) => {
     const engine = engineRef.current;
@@ -314,26 +331,58 @@ export function useGameEngine(): GameUI {
 
     const engine = engineRef.current;
     if (!engine) return;
-    const state = engine.getState();
+    let state = engine.getState();
 
-    // Check if both players have submitted mulligan
+    // In AI mode, auto-submit AI's mulligan after human's
+    if (aiPlayer && !state.turn.mulliganSubmitted.includes(aiPlayer)) {
+      const cardDb = new Map<string, CardDefinition>();
+      for (const card of originsCards) cardDb.set(card.id, card);
+      const aiAction = generateAIAction(state, cardDb, aiPlayer);
+      if (aiAction) {
+        engine.processAction(aiAction);
+        state = engine.getState();
+      }
+    }
+
     if (state.turn.mulliganSubmitted.length < 2) {
-      // Switch to other player for their mulligan
+      // Switch to other player for their mulligan (hotseat)
       const other = state.turnOrder.find(p => p !== currentViewer)!;
       setCurrentViewer(other);
       refreshState(other);
     } else {
-      // Both mulligans done — switch to active player
-      setCurrentViewer(state.turn.activePlayer);
+      // Both mulligans done — lock to human player
+      const viewer: PlayerId = "player1";
+      setCurrentViewer(viewer);
       setInteractionMode("idle");
-      refreshState(state.turn.activePlayer);
+      refreshState(viewer);
     }
-  }, [currentViewer, mulliganSelection, dispatch, refreshState]);
+  }, [currentViewer, mulliganSelection, dispatch, refreshState, aiPlayer]);
 
   const switchViewer = useCallback((player: PlayerId) => {
     setCurrentViewer(player);
     refreshState(player);
   }, [refreshState]);
+
+  // AI auto-dispatch: when it's the AI's turn, generate and dispatch actions
+  useEffect(() => {
+    if (!aiPlayer || !gameState || gameState.gameOver) return;
+    if (gameState.turn.phase === "setup") return; // Mulligan handled separately
+
+    const isAiTurn = gameState.turn.activePlayer === aiPlayer;
+    const aiHasPriority = gameState.turn.priorityPlayer === aiPlayer;
+
+    if (!isAiTurn && !aiHasPriority) return;
+
+    const cardDb = new Map<string, CardDefinition>();
+    for (const card of originsCards) cardDb.set(card.id, card);
+
+    const timer = setTimeout(() => {
+      const action = generateAIAction(gameState, cardDb, aiPlayer);
+      if (action) dispatch(action);
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, [aiPlayer, gameState, dispatch]);
 
   return {
     gameState,
@@ -344,6 +393,7 @@ export function useGameEngine(): GameUI {
     targetingContext,
     moveContext,
     mulliganSelection,
+    aiPlayer,
     getCardDef,
     getDefById,
     startGame,

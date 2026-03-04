@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { useGameEngine } from "./hooks/useGameEngine.js";
 import type { CardInstanceId, PlayerId } from "../models/card.js";
@@ -15,6 +16,7 @@ import { CardView } from "./components/cards/CardView.js";
 
 export function App() {
   const ui = useGameEngine();
+  const [vsAI, setVsAI] = useState(true);
 
   // No game yet — show setup screen
   if (!ui.visibleState || !ui.gameState) {
@@ -22,7 +24,21 @@ export function App() {
       <div className="setup-screen">
         <h1>Riftbound TCG</h1>
         <p>Simulator & Dev Tool</p>
-        <button className="btn btn-primary" onClick={ui.startGame}>
+        <div className="mode-toggle">
+          <button
+            className={`btn ${vsAI ? "btn-primary" : ""}`}
+            onClick={() => setVsAI(true)}
+          >
+            vs AI
+          </button>
+          <button
+            className={`btn ${!vsAI ? "btn-primary" : ""}`}
+            onClick={() => setVsAI(false)}
+          >
+            Hotseat
+          </button>
+        </div>
+        <button className="btn btn-primary" onClick={() => ui.startGame(vsAI)}>
           Start Game
         </button>
       </div>
@@ -45,10 +61,13 @@ export function App() {
 
   // Handle game over
   if (gs.gameOver) {
+    const winnerLabel = gs.winner
+      ? (gs.winner === "player1" ? "You Win!" : (ui.aiPlayer ? "AI Wins!" : `${gs.winner} Wins!`))
+      : "Draw!";
     return (
       <div className="game-over-overlay">
-        <h2>{gs.winner ? `${gs.winner} Wins!` : "Draw!"}</h2>
-        <button className="btn btn-primary" onClick={ui.startGame}>New Game</button>
+        <h2>{winnerLabel}</h2>
+        <button className="btn btn-primary" onClick={() => ui.startGame(!!ui.aiPlayer)}>New Game</button>
       </div>
     );
   }

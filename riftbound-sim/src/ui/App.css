@@ -67,6 +67,22 @@ body {
   font-size: 14px;
 }
 
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.mode-toggle .btn {
+  min-width: 100px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.setup-screen > .btn-primary {
+  padding: 14px 32px;
+  font-size: 18px;
+}
+
 .btn {
   padding: 8px 16px;
   border: 1px solid var(--border-default);
