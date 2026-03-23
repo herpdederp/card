@@ -19,7 +19,7 @@ import { CardType, CardSet, Rarity, Domain } from "../models/card.js";
 import { CardDatabase } from "../cards/database.js";
 import { CardScriptRegistry } from "../cards/abilities.js";
 import { RiftboundEngine } from "../engine/engine.js";
-import { originsCards } from "../cards/origins/sample-cards.js";
+import { originsCards } from "../cards/origins/index.js";
 import { registerOriginsScripts } from "../cards/origins/sample-scripts.js";
 import { SeededRNG } from "../engine/rng.js";
 import type { EffectContext } from "../engine/effects.js";

@@ -15,7 +15,7 @@ import type {
 import { CardDatabase } from "../../cards/database.js";
 import { CardScriptRegistry } from "../../cards/abilities.js";
 import { RiftboundEngine } from "../../engine/engine.js";
-import { originsCards } from "../../cards/origins/sample-cards.js";
+import { originsCards } from "../../cards/origins/index.js";
 import { registerOriginsScripts } from "../../cards/origins/sample-scripts.js";
 import { generateAIAction } from "../ai/bot.js";
 

@@ -1,0 +1,5016 @@
+[
+  {
+    "collectorNumber": 1,
+    "name": "Blazing Scorcher",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACCELERATE (You may pay 1 Fury as an additional cost to have me enter ready.)"
+  },
+  {
+    "collectorNumber": 2,
+    "name": "Brazen Buccaneer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "As you play me, you may discard a card as an additional cost. If you do, reduce my cost by .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "As you play me, you may discard a card as an additional cost. If you do, reduce my cost by 2."
+  },
+  {
+    "collectorNumber": 3,
+    "name": "Chemtech Enforcer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "ASSAULT 2 ( +2 while I'm an attacker. ) When you play me, discard 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ASSAULT (+2 Might while I'm an attacker.) When you play me, discard 1."
+  },
+  {
+    "collectorNumber": 4,
+    "name": "Cleave",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Give a unit ASSAULT 3 this turn. (+3 while it's an attacker.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Give a unit ASSAULT 3 this turn. (+3 Might while it's an attacker.)"
+  },
+  {
+    "collectorNumber": 5,
+    "name": "Disintegrate",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or showdowns.) Deal 3 to a unit at a battlefield. If this kills it, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. If this kills it, draw 1."
+  },
+  {
+    "collectorNumber": 6,
+    "name": "Flame Chompers",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you discard me, you may pay to play me.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you discard me, you may pay 1 Fury to play me."
+  },
+  {
+    "collectorNumber": 7,
+    "name": "Fury Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 8,
+    "name": "Get Excited!",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Discard 1. Deal its Energy cost as damage to a unit at a battlefield. (Ignore its Power cost.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Discard 1. Deal its Energy cost as damage to a unit at a battlefield. (Ignore its Power cost.)"
+  },
+  {
+    "collectorNumber": 9,
+    "name": "Hextech Ray",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Deal 3 damage to a unit at a battlefield.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield."
+  },
+  {
+    "collectorNumber": 10,
+    "name": "Legion Rearguard",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "ACCELERATE (As I'm played, you may pay as an additional cost to have me enter ready.)",
+    "source": "wiki+patch",
+    "powerCost": "0",
+    "apiRulesText": "ACCELERATE (You may pay 1 Fury as an additional cost to have me enter ready.)"
+  },
+  {
+    "collectorNumber": 11,
+    "name": "Magma Wurm",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 8,
+    "might": 8,
+    "health": null,
+    "rulesText": "Other friendly units enter ready.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Other friendly units enter ready."
+  },
+  {
+    "collectorNumber": 12,
+    "name": "Noxus Hopeful",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "LEGION — I cost less. (Get the effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "LEGION - I cost 2 less. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 13,
+    "name": "Pouty Poro",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "DEFLECT (Opponents must pay to choose me with an ability or spell)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "DEFLECT (Opponents must pay Power to choose me with a spell or ability.)"
+  },
+  {
+    "collectorNumber": 14,
+    "name": "Sky Splitter",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Common",
+    "energyCost": 8,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) This spell's Energy cost is reduced by the highest Might among units you control. Deal 5 to a unit at a battlefield.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) This spell's Energy cost is reduced by the highest Might among units you control. Deal 5 to a unit at a battlefield."
+  },
+  {
+    "collectorNumber": 15,
+    "name": "Captain Farron",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 5,
+    "health": null,
+    "rulesText": "Other friendly units here have ASSAULT. (+1 while they're attackers.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Other friendly units here have ASSAULT. (+1 Might while they're attackers.)"
+  },
+  {
+    "collectorNumber": 16,
+    "name": "Dangerous Duo",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "LEGION — When you play me, give a unit +2 this turn. (Get the effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "LEGION - When you play me, give a unit +2 Might this turn. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 17,
+    "name": "Iron Ballista",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "This enters exhausted. [tap]: Deal 2 to a unit at a battlefield.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "This enters exhausted. Exhaust: Deal 2 to a unit at a battlefield."
+  },
+  {
+    "collectorNumber": 18,
+    "name": "Noxus Saboteur",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "Your opponents' HIDDEN cards can't be revealed here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Your opponents' HIDDEN cards can't be revealed here."
+  },
+  {
+    "collectorNumber": 19,
+    "name": "Raging Soul",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "If you've discarded a card this turn, I have ASSAULT and GANKING. (+1 while I'm an attacker. I can move from battlefield to battlefield)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "If you've discarded a card this turn, I have ASSAULT and GANKING. (+1 Might while I'm an attacker. I can move from battlefield to battlefield.)"
+  },
+  {
+    "collectorNumber": 20,
+    "name": "Scrapyard Champion",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "LEGION When you play me, discard 2 then draw 2. ( Gain this effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "LEGION - When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 21,
+    "name": "Sun Disc",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: LEGION — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: LEGION - The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 22,
+    "name": "Thermo Beam",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns) Kill all gear.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Kill all gear."
+  },
+  {
+    "collectorNumber": 23,
+    "name": "Unlicensed Armory",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Discard 1, [tap]: Choose a friendly unit. The next time it dies this turn, you may pay to recall it exhausted instead. (Send it to base. This isn't a move.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Discard 1, Exhaust: Choose a friendly unit. The next time it dies this turn, you may pay 1 Fury to recall it exhausted instead. (Send it to base. This isn't a move.)"
+  },
+  {
+    "collectorNumber": 24,
+    "name": "Void Seeker",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Deal 4 to a unit at a battlefield. Draw 1.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Deal 4 to a unit at a battlefield. Draw 1."
+  },
+  {
+    "collectorNumber": 25,
+    "name": "Blind Fury",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and play it, ignoring its cost. Then recycle the rest.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and play it, ignoring its cost. Then recycle the rest."
+  },
+  {
+    "collectorNumber": 26,
+    "name": "Brynhir Thundersong",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "When you play me, opponents can't play cards this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, opponents can't play cards this turn."
+  },
+  {
+    "collectorNumber": 27,
+    "name": "Darius Trifarian",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "When you play your second card in a turn, give me +2 might this turn and ready me.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play your second card in a turn, give me +2 Might this turn and ready me."
+  },
+  {
+    "collectorNumber": 28,
+    "name": "Draven Showboat",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 3,
+    "health": null,
+    "rulesText": "My Might is increased by your points.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "My Might is increased by your points."
+  },
+  {
+    "collectorNumber": 29,
+    "name": "Falling Star",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Do this twice: Deal 3 to a unit. (You can choose different units.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Do this twice: Deal 3 to a unit. (You can choose different units.)"
+  },
+  {
+    "collectorNumber": 30,
+    "name": "Jinx Demolitionist",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 4,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) ASSAULT 2 (+2 while I'm an attacker.) When you play me, discard 2.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACCELERATE (You may pay 1 Fury as an additional cost to have me enter ready.) ASSAULT 2 (+2 Might while I'm an attacker.) When you play me, discard 2."
+  },
+  {
+    "collectorNumber": 31,
+    "name": "Raging Firebrand",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play me, the next spell you play this turn costs [5] less.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, the next spell you play this turn costs 5 less."
+  },
+  {
+    "collectorNumber": 32,
+    "name": "Ravenborn Tome",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: The next spell you play deals 1 Bonus Damage (Each instance of damage the spell deals is increased by 1.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: The next spell you play deals 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)"
+  },
+  {
+    "collectorNumber": 33,
+    "name": "Shakedown",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Choose an enemy unit. Deal 6 to it unless its controller has you draw 2.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Choose an enemy unit. Deal 6 to it unless its controller has you draw 2."
+  },
+  {
+    "collectorNumber": 34,
+    "name": "Tryndamere Barbarian",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": 8,
+    "health": null,
+    "rulesText": "When I conquer after an attack, if you assigned 5 or more excess damage to opponent's units, you score 1 Point.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When I conquer after an attack, if you assigned 5 or more excess damage to enemy units, you score 1 point."
+  },
+  {
+    "collectorNumber": 35,
+    "name": "Vayne Hunter",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 2,
+    "health": null,
+    "rulesText": "ASSAULT 3 (+3 while I'm an attacker.) If an opponent controls a battlefield, I enter ready. When I conquer, you may pay to return me to my owner's hand.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ASSAULT 3 (+3 Might while I'm an attacker.) If an opponent controls a battlefield, I enter ready. When I conquer, you may pay 1 to return me to my owner's hand."
+  },
+  {
+    "collectorNumber": 36,
+    "name": "Vi Destructive",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": 3,
+    "health": null,
+    "rulesText": "GANKING (I can move from battlefield to battlefield.) Recycle 1 from your trash: Give me +1 this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "GANKING (I can move from battlefield to battlefield.) Recycle 1 from your trash: Give me +1 Might this turn."
+  },
+  {
+    "collectorNumber": 37,
+    "name": "Immortal Phoenix",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "ASSAULT 2 (+2 when I'm an attacker.) When you kill a unit with a spell, you may pay to play me from your trash.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ASSAULT 2 (+2 Might while I'm an attacker.) When you kill a unit with a spell, you may pay 1 Fury to play me from your trash."
+  },
+  {
+    "collectorNumber": 38,
+    "name": "Kadregrin the Infernal",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Epic",
+    "energyCost": 9,
+    "might": 9,
+    "health": null,
+    "rulesText": "When you play me, draw 1 for each of your MIGHTY units. (A unit is Mighty while it has 5+ Might.)",
+    "source": "wiki+patch",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, draw 1 for each of your MIGHTY units. (A unit is Mighty while it has 5+ Might.)"
+  },
+  {
+    "collectorNumber": 39,
+    "name": "Kai'Sa Survivor",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) When I conquer, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACCELERATE (You may pay 1 Fury as an additional cost to have me enter ready.) When I conquer, draw 1."
+  },
+  {
+    "collectorNumber": 40,
+    "name": "Seal of Rage",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: REACTION — ADD . (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD 1 Fury. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 41,
+    "name": "Volibear Furious",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Fury"
+    ],
+    "rarity": "Epic",
+    "energyCost": 10,
+    "might": 9,
+    "health": null,
+    "rulesText": "DEFLECT 2 ( Opponents must pay to choose me with a spell or ability.) When I attack, deal 5 damage split among any number of enemy units here.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "DEFLECT 2 (Opponents must play 2 Power to choose me with a spell or ability.) When I attack, deal 5 damage split among any number of enemy units here."
+  },
+  {
+    "collectorNumber": 42,
+    "name": "Calm Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 43,
+    "name": "Charm",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "Move an enemy unit.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Move an enemy unit."
+  },
+  {
+    "collectorNumber": 44,
+    "name": "Clockwork Keeper",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "As you play me, you may pay as an additional cost. If you do, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "As you play me, you may pay 1 Calm as an additional cost. If you do, draw 1."
+  },
+  {
+    "collectorNumber": 45,
+    "name": "Defy",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play anytime, even before spells and abilities resolve.) Counter a spell that costs no more than and no more than .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Counter a spell that costs no more than 4 and no more than 1 Power."
+  },
+  {
+    "collectorNumber": 46,
+    "name": "En Garde",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells or abilities resolve.) Give a friendly unit +1 might, then an additional +1 this turn if it is the only unit you control there.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give a friendly unit +1 Might this turn, then an additional +1 Might this turn if it is the only unit you control there."
+  },
+  {
+    "collectorNumber": 47,
+    "name": "Find Your Center",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) If an opponent's score is within 3 points of the Victory Score, this costs less. Draw 1 and channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) If an opponent's score is within 3 points of the Victory Score, this costs 2 less. Draw 1 and channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 48,
+    "name": "Meditation",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play anytime, even before spells and abilities resolve.) As an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) As an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1."
+  },
+  {
+    "collectorNumber": 49,
+    "name": "Playful Phantom",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 50,
+    "name": "Rune Prison",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Stun a unit. (It doesn't deal combat damage this turn.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Stun a unit. (It doesn't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 51,
+    "name": "Solari Shieldbearer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 2,
+    "health": null,
+    "rulesText": "When you play me, stun a unit. (It doesn't deal combat damage this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, stun a unit. (It doesn't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 52,
+    "name": "Stalwart Poro",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "SHIELD (+1 while I'm a defender.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "SHIELD (+1 Might while I'm a defender.)"
+  },
+  {
+    "collectorNumber": 53,
+    "name": "Stand United",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for ) ACTION (Play on your turn or in showdowns.) Buff a friendly unit. Buffs give an additional +1 to friendly units this turn. (To buff a unit, give it a +1 buff it it doesn't already have one.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Buff a friendly unit. Buffs give an additional +1 Might to friendly units this turn. (To buff a unit, give it a +1 Might buff if it doesn't already have one.)"
+  },
+  {
+    "collectorNumber": 54,
+    "name": "Sunlit Guardian",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "SHIELD (+1 while I'm a defender.) TANK (I must be assigned combat damage first.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "SHIELD (+1 Might while I'm a defender.) TANK (I must be assigned combat damage first.)"
+  },
+  {
+    "collectorNumber": 55,
+    "name": "Wielder of Water",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 2,
+    "health": null,
+    "rulesText": "While I'm attacking or defending alone, I have +2 .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "While I'm attacking or defending alone, I have +2 Might."
+  },
+  {
+    "collectorNumber": 56,
+    "name": "Adaptatron",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "When I conquer, you may kill a gear. If you do, buff me. (If I don't have a buff, I get a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I conquer, you may kill a gear. If you do, buff me. (If I don't have a buff, I get a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 57,
+    "name": "Block",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) ACTION (Play on your turn or in showdowns.) Give a unit SHIELD 3 and TANK this turn. (+3 while it's a defender. It must be assigned combat damage first.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Give a unit SHIELD 3 and TANK this turn. (+3 Might while it's a defender. It must be assigned combat damage first.)"
+  },
+  {
+    "collectorNumber": 58,
+    "name": "Discipline",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play anytime, even before spells and abilities resolve.) Give a unit +2 this turn. Draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give a unit +2 Might this turn. Draw 1."
+  },
+  {
+    "collectorNumber": 59,
+    "name": "Eclipse Herald",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 7,
+    "might": 7,
+    "health": null,
+    "rulesText": "When you stun an enemy unit, ready me and give me +1 this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you stun an enemy unit, ready me and give me +1 Might this turn."
+  },
+  {
+    "collectorNumber": 60,
+    "name": "Mask of Foresight",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "When a friendly unit attacks or defends alone, give it +1 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When a friendly unit attacks or defends alone, give it +1 Might this turn."
+  },
+  {
+    "collectorNumber": 61,
+    "name": "Poro Herder",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, if you control a Poro, buff me and draw 1. (If I don't have a buff, I get a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, if you control a Poro, buff me and draw 1. (If I don't have a buff, I get a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 62,
+    "name": "Reinforce",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "Look at the top 5 cards of you Main Deck. You may play a unit from among them. Its Energy cost is reduced by [5]. Then recycle the remaining cards.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Look at the top 5 cards of you Main Deck. You may play a unit from among them. Its Energy cost is reduced by 5. Then recycle the remaining cards."
+  },
+  {
+    "collectorNumber": 63,
+    "name": "Spirit's Refuge",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "When you play this, buff a friendly unit. (If it doesn't have a buff, it gets a +1 buff.) Friendly buffed units have DEFLECT if they didn't already. (Opponents must pay to choose those units with a spell or ability.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play this, buff a friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.) Friendly buffed units have DEFLECT if they didn't already. (Opponents must pay 1 Power to choose those units with a spell or ability.)"
+  },
+  {
+    "collectorNumber": 64,
+    "name": "Wind Wall",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play anytime, even before spells and abilities resolve.) Counter a spell.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Counter a spell."
+  },
+  {
+    "collectorNumber": 65,
+    "name": "Wizened Elder",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "While I'm buffed, I have an additional +1 .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "While I'm buffed, I have an additional +1 Might."
+  },
+  {
+    "collectorNumber": 66,
+    "name": "Ahri Alluring",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "When I hold, you score 1 point.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When I hold, you score 1 point."
+  },
+  {
+    "collectorNumber": 67,
+    "name": "Blitzcrank Impassive",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "TANK (I must be assigned combat damage first.) When you play me to a battlefield, you may move an enemy unit to here. When i hold, return me to my owner's hand.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "TANK (I must be assigned combat damage first.) When you play me to a battlefield, you may move an enemy unit to here. When I hold, return me to my owner's hand."
+  },
+  {
+    "collectorNumber": 68,
+    "name": "Caitlyn Patrolling",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "I must be assigned combat damage last. [tap]: Deal damage equal to my Might to a unit at a battlefield. Use this ability only while I'm at a battlefield.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "I must be assigned combat damage last. Exhaust: Deal damage equal to my Might to a unit at a battlefield. Use this ability only while I'm at a battlefield."
+  },
+  {
+    "collectorNumber": 69,
+    "name": "Last Stand",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Double a friendly unit's Might this turn. Give it TEMPORARY. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Double a friendly unit's Might this turn. Give it TEMPORARY. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+  },
+  {
+    "collectorNumber": 70,
+    "name": "Mageseeker Warden",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "While I'm at a battlefield, opponents can only play units to their base. While I'm at a battlefield, spells and abilities can't ready enemy units and gears.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "While I'm at a battlefield, opponents can only play units to their base. While I'm at a battlefield, spells and abilities can't ready enemy units and gears."
+  },
+  {
+    "collectorNumber": 71,
+    "name": "Party Favors",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 72,
+    "name": "Solari Shrine",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "When you kill a stunned enemy unit, you may exhaust this to draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you kill a stunned enemy unit, you may exhaust this to draw 1."
+  },
+  {
+    "collectorNumber": 73,
+    "name": "Sona Harmonious",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "While I'm at a battlefield, ready 4 friendly runes at the end of your turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "While I'm at a battlefield, ready 4 friendly runes at the end of your turn."
+  },
+  {
+    "collectorNumber": 74,
+    "name": "Taric Protector",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "SHIELD (+1 might while I'm a defender.) TANK (I must be assigned combat damage first.) Other friendly units here have SHIELD.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "SHIELD (+1 Might while I'm a defender.) TANK (I must be assigned combat damage first.) Other friendly units here have SHIELD."
+  },
+  {
+    "collectorNumber": 75,
+    "name": "Tasty Faefolk",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": 6,
+    "health": null,
+    "rulesText": "ACCELERATE (You may play as an additional cost to have me enter ready.) DEATHKNELL — Channel 2 runes exhausted and draw 1. (When I die, get the effect.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACCELERATE (You may play 1 Calm as an additional cost to have me enter ready.) DEATHKNELL - Channel 2 runes exhausted and draw 1. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 76,
+    "name": "Yasuo Remorseful",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "When I attack, deal damage equal to my Might to an enemy here.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When I attack, deal damage equal to my Might to an enemy unit here."
+  },
+  {
+    "collectorNumber": 77,
+    "name": "Zhonya's Hourglass",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide for now to react with later for .) The next time a friendly unit would die, kill this instead. Recall that unit exhausted. (Send it to base. This isn't a move.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) The next time a friendly unit would die, kill this instead. Recall that unit exhausted. (Send it to base. This isn't a move.)"
+  },
+  {
+    "collectorNumber": 78,
+    "name": "Lee Sin Ascetic",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Epic",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "SHIELD (+1 while I'm a defender.) [tap]: Buff me. (I get +1 buff.) I can have any number of buffs.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "SHIELD (+1 Might while I'm a defender.) Exhaust: Buff me. (I get a +1 Might buff.) I can have any number of buffs."
+  },
+  {
+    "collectorNumber": 79,
+    "name": "Leona Zealot",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Epic",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "If an opponent's score is within 3 points of the Victory Score, I enter ready. Stunned enemy units here have -8 , to a minimum of 1 .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "If an opponent's score is within 3 points of the Victory Score, I enter ready. Stunned enemy units here have -8 Might, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 80,
+    "name": "Mystic Reversal",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Gain control of a spell. You may make new choices for it.",
+    "source": "wiki",
+    "powerCost": "3",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Gain control of a spell. You may make new choices for it."
+  },
+  {
+    "collectorNumber": 81,
+    "name": "Seal of Focus",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: REACTION — ADD . (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD calm. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 82,
+    "name": "Whiteflame Protector",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Calm"
+    ],
+    "rarity": "Epic",
+    "energyCost": 8,
+    "might": 8,
+    "health": null,
+    "rulesText": "When you play me, give a unit +8 this turn.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, give a unit +8 Might this turn."
+  },
+  {
+    "collectorNumber": 83,
+    "name": "Consult the Past",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) REACTION (Play any time, even before spells and abilities resolve.) Draw 2.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) REACTION (Play any time, even before spells and abilities resolve.) Draw 2."
+  },
+  {
+    "collectorNumber": 84,
+    "name": "Eager Apprentice",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "While I'm at a battlefield, the Energy costs for spells you play is reduced by , to a minimum of .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "While I'm at a battlefield, the Energy costs for spells you play is reduced by 1, to a minimum of 1."
+  },
+  {
+    "collectorNumber": 85,
+    "name": "Falling Comet",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (play on your turn or in showdowns.) Deal 6 to a unit at a battlefield.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (play on your turn or in showdowns.)"
+  },
+  {
+    "collectorNumber": 86,
+    "name": "Jeweled Colossus",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) SHIELD (+1 while I'm a defender.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) SHIELD (+1 Might while I'm a defender.)"
+  },
+  {
+    "collectorNumber": 87,
+    "name": "Lecturing Yordle",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 2,
+    "health": null,
+    "rulesText": "TANK (I must be assigned combat damage first.) When you play me, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "TANK (I must be assigned combat damage first.) When you play me, draw 1."
+  },
+  {
+    "collectorNumber": 88,
+    "name": "Mega-Mech",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 7,
+    "might": 8,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 89,
+    "name": "Mind Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 90,
+    "name": "Orb of Regret",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: Give a unit -1 this turn, to a minimum of of 1 .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: Give a unit -1 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 91,
+    "name": "Pit Crew",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play a gear, ready me.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play a gear, ready me."
+  },
+  {
+    "collectorNumber": 92,
+    "name": "Riptide Rex",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "When you play me, deal 6 to an enemy unit at a battlefield.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, deal 6 to an enemy unit at a battlefield."
+  },
+  {
+    "collectorNumber": 93,
+    "name": "Smoke Screen",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give a unit -4 this turn, to a minimum of 1 .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: Give a unit -1 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 94,
+    "name": "Sprite Call",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for ) ACTION (Play on your turn or in showdowns.) Play a ready 3 Sprite unit token with TEMPORARY (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Play a ready 3 Might Sprite unit token with TEMPORARY. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+  },
+  {
+    "collectorNumber": 95,
+    "name": "Stupefy",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play anytime, even before spells and abilities resolve.) Give a unit +1 this turn, to a minimum of 1 . Draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give a unit -1 Might this turn, to a minimum of 1 Might. Draw 1."
+  },
+  {
+    "collectorNumber": 96,
+    "name": "Watchful Sentry",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 1,
+    "health": null,
+    "rulesText": "Deathknell — Draw 1. When I die, get the effect.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "DEATHKNELL - Draw 1. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 97,
+    "name": "Blastcone Fae",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) When you play me, give a unit -2 this turn, to a minimum of 1",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) When you play me, give a unit -2 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 98,
+    "name": "Energy Conduit",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: REACTION - ADD 1. (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: REACTION - ADD 1. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 99,
+    "name": "Garbage Grabber",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Recycle 3 from your trash, , [tap]: Draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Recycle 3 from your trash, 1, Exhaust: Draw 1."
+  },
+  {
+    "collectorNumber": 100,
+    "name": "Gemcraft Seer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) Other friendly units have VISION.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) Other friendly units have VISION."
+  },
+  {
+    "collectorNumber": 101,
+    "name": "Mushroom Pouch",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "At the start of your Beginning Phase, if you control a facedown card at a battlefield, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "At the start of your Beginning Phase, if you control a facedown card at a battlefield, draw 1."
+  },
+  {
+    "collectorNumber": 102,
+    "name": "Portal Rescue",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Banish a friendly unit, then play it to base, ignoring its cost.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Banish a friendly unit, then play it to base, ignoring its cost."
+  },
+  {
+    "collectorNumber": 103,
+    "name": "Ravenbloom Student",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "When you play a spell, give me +1 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play a spell, give me +1 Might this turn."
+  },
+  {
+    "collectorNumber": 104,
+    "name": "Retreat",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Return a friendly unit to its owner's hand. Its owner channels 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Return a friendly unit to its owner's hand. Its owner channels 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 105,
+    "name": "Singularity",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Deal 6 to each of up to two units.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Deal 6 to each of up to two units."
+  },
+  {
+    "collectorNumber": 106,
+    "name": "Sprite Mother",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, play a ready 3 might Sprite unit token with TEMPORARY here. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, play a ready 3 Might Sprite unit token with TEMPORARY here. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+  },
+  {
+    "collectorNumber": 107,
+    "name": "Ava Achiever",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "When I attack, you may pay to play a card with HIDDEN from your hand here, ignoring its cost.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I attack, you may pay mind to play a card with HIDDEN from your hand here, ignoring its cost."
+  },
+  {
+    "collectorNumber": 108,
+    "name": "Convergent Mutation",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Choose a friendly unit. Increase its Might until it equals the Might of another friendly unit.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Choose a friendly unit. Increase its Might until it equals the Might of another friendly unit."
+  },
+  {
+    "collectorNumber": 109,
+    "name": "Dr. Mundo, Expert",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 8,
+    "might": 6,
+    "health": null,
+    "rulesText": "My Might is increased by the number of cards in your trash. At the start of your Beginning Phase, recycle 3 from your trash.",
+    "source": "wiki+patch",
+    "powerCost": "2",
+    "apiRulesText": "My Might is increased by the number of cards on your trash. At the start of your Beginning Phase, recycle 3 from your trash."
+  },
+  {
+    "collectorNumber": 110,
+    "name": "Ekko Recurrent",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) DEATHKNELL - Recycle me to ready your runes. (When I die, get the effect.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACCELERATE (You may pay 1 mind as an additional cost to have me enter ready.) DEATHKNELL - Recycle me to ready your runes. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 111,
+    "name": "Heimerdinger Inventor",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "I have all [tap] abilities of all friendly legends, units, and gears.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "I have all exhaust abilities of all friendly legends, units and gear."
+  },
+  {
+    "collectorNumber": 112,
+    "name": "Kai'Sa Evolutionary",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "GANKING (I can move from battlefield to battlefield.) When I conquer, you may play a spell from your trash with Energy cost less than your points without paying its Energy cost. Then recycle it, (You must still pay its Power cost.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "GANKING (I can move from battlefield to battlefield.) When I conquer, you may play a spell from your trash with Energy cost less than your points without paying its Energy cost. Then recycle it. (You must still pay its Power cost.)"
+  },
+  {
+    "collectorNumber": 113,
+    "name": "Malzahar Fanatic",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "Kill a friend unit or gear, [tap]&#160;: ACTION — ADD . (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Kill a friend unit or gear, exhaust : ACTION - ADD rune rune. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 114,
+    "name": "Progress Day",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Draw 4.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Draw 4."
+  },
+  {
+    "collectorNumber": 115,
+    "name": "Promising Future",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "Each player looks at the top 5 cards of their Main Deck, chooses one, then recycles the rest. Starting with the next player, each player plays those cards ignoring Energy costs. (They must still pay Power costs)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Each player looks at the top 5 cards of their Main Deck, chooses one, then recycles the rest. Starting with the next player, each player plays those cards, ignoring Energy costs. (They must still pay Power costs.)"
+  },
+  {
+    "collectorNumber": 116,
+    "name": "Thousand-Tailed Watcher",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": 7,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) When you play me, give enemy units -3 this turn, to a minimum of 1 .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACCELERATE (You may pay 1 mind as an additional cost to have me enter ready.) When you play me, give enemy units -3 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 117,
+    "name": "Viktor Innovator",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play a card on an opponent's turn, play a 1 Recruit unit token in your base.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play a card on an opponent's turn, play a 1 Might Recruit unit token in your base."
+  },
+  {
+    "collectorNumber": 118,
+    "name": "Wraith of Echoes",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "The first time a friendly unit dies each turn, draw 1.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "The first time a friendly unit dies each turn, draw 1."
+  },
+  {
+    "collectorNumber": 119,
+    "name": "Ahri Inquisitive",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When I attack or defend, give an enemy unit here -2 this turn, to a minimum of 1 .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When I attack or defend, give an enemy unit here -2 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 120,
+    "name": "Seal of Insight",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: REACTION - ADD . Activate this any time. (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD mind. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 121,
+    "name": "Teemo Strategist",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) When I defend or I'm from HIDDEN, reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with HIDDEN, then recycle them.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) When I defend or I'm played from HIDDEN, reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with , then recycle them."
+  },
+  {
+    "collectorNumber": 122,
+    "name": "Time Warp",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 10,
+    "might": null,
+    "health": null,
+    "rulesText": "Take a turn after this one. Banish this.",
+    "source": "wiki",
+    "powerCost": "4",
+    "apiRulesText": "Take a turn after this one. Banish this."
+  },
+  {
+    "collectorNumber": 123,
+    "name": "Unchecked Power",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 7,
+    "might": null,
+    "health": null,
+    "rulesText": "Exhaust all friendly units, then deal 12 to all units at battlefields.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Exhaust all friendly units, then deal 12 to all units at battlefields."
+  },
+  {
+    "collectorNumber": 124,
+    "name": "Arena Bar",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 125,
+    "name": "Bilgewater Bully",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "While I'm buffed, I have GANKING. (I can move from battlefield to battlefield.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "While I'm buffed, I have GANKING. (I can move from battlefield to battlefield.)"
+  },
+  {
+    "collectorNumber": 126,
+    "name": "Body Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 127,
+    "name": "Cannon Barrage",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Deal 2 to all enemy units in combat.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Deal 2 to all enemy units in combat."
+  },
+  {
+    "collectorNumber": 128,
+    "name": "Challenge",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Choose a friendly unit and an enemy unit. they deal damage equal to their Mights to each other.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Choose a friendly unit and an enemy unit. They deal damage equal to their Mights to each other."
+  },
+  {
+    "collectorNumber": 129,
+    "name": "Confront",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Units you play this turn enter ready. Draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Units you play this turn enter ready. Draw 1."
+  },
+  {
+    "collectorNumber": 130,
+    "name": "Crackshot Corsair",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When I attack, deal 1 to an enemy unit here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I attack, deal 1 to an enemy unit here."
+  },
+  {
+    "collectorNumber": 131,
+    "name": "Dune Drake",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "When I attack, give me +2 might if there is a ready enemy unit here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I attack, give me +2 Might if there is a ready enemy unit here."
+  },
+  {
+    "collectorNumber": 132,
+    "name": "First Mate",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, ready another unit.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, ready another unit."
+  },
+  {
+    "collectorNumber": 133,
+    "name": "Flurry of Blades",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Deal 1 to all units at battlefields.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Deal 1 to all units at battlefields."
+  },
+  {
+    "collectorNumber": 134,
+    "name": "Mobilize",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Channel 1 rune exhausted, if you couldn't, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Channel 1 rune exhausted. If you can't, draw 1."
+  },
+  {
+    "collectorNumber": 135,
+    "name": "Pakaa Cub",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.)"
+  },
+  {
+    "collectorNumber": 136,
+    "name": "Pit Rookie",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "When you play me, buff another friendly unit. (If it doesn't have a buff, it gets +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, buff another friendly unit. (If it doesn't have a buff, it gets +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 137,
+    "name": "Stormclaw Ursine",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Common",
+    "energyCost": 7,
+    "might": 6,
+    "health": null,
+    "rulesText": "Tank ( I must be assigned combat damage first. ) When you play me, channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "TANK (I must be assigned combat damage first.) When you play me, channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 138,
+    "name": "Catalyst of Aeons",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Channel 2 rune exhausted. If you couldn't channel 2 runes this way, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Channel 2 runes exhausted. If you couldn't channel 2 runes this way, draw 1."
+  },
+  {
+    "collectorNumber": 139,
+    "name": "Cithria of Cloudfield",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": 1,
+    "health": null,
+    "rulesText": "When you play another unit, buff me. (If i don't have a buff, I get a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play another unit, buff me. (If I don't have a buff, I get a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 140,
+    "name": "Herald of Scales",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "Your Dragons' Energy costs are reduced by , to a minimum of .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Your Dragons' Energy costs are reduced by 2, to a minimum of 1."
+  },
+  {
+    "collectorNumber": 141,
+    "name": "Kinkou Monk",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play me, buff two other friendly units. (Each one that doesn't have a buff gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, buff two other friendly units. (Each one that doesn't have a buff gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 142,
+    "name": "Mountain Drake",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 9,
+    "might": 10,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 143,
+    "name": "Pirate's Haven",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "When you ready a friendly unit, give it +1 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you ready a friendly unit, give it +1 Might this turn."
+  },
+  {
+    "collectorNumber": 144,
+    "name": "Spoils of War",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) If an enemy unit has died this turn, this costs less. Draw 2.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) If an enemy unit has died this turn, this costs 2 less. Draw 2."
+  },
+  {
+    "collectorNumber": 145,
+    "name": "Unyielding Spirit",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play at any time, even before spells and abilities resolve.) Prevent all spell and ability damage this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play at any time, even before spells and abilities resolve.) Prevent all spell and ability damage this turn."
+  },
+  {
+    "collectorNumber": 146,
+    "name": "Wallop",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Ready a unit.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Ready a unit."
+  },
+  {
+    "collectorNumber": 147,
+    "name": "Wildclaw Shaman",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, you may spend a buff to buff me and ready me. (If I don't have a buff, I get a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, you may spend a buff to buff me and ready me. (If I don't have a buff, I get a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 148,
+    "name": "Anivia Primal",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": 8,
+    "health": null,
+    "rulesText": "When I attack, deal 3 to all enemy units here.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When I attack, deal 3 to all enemy units here."
+  },
+  {
+    "collectorNumber": 149,
+    "name": "Carnivorous Snapvine",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 6,
+    "health": null,
+    "rulesText": "When you play me, choose a unit at a battlefield. We deal damage equal to our Mights to each other.",
+    "source": "wiki+patch",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, choose an enemy unit at a battlefield. We deal damage equal to our Mights to each other."
+  },
+  {
+    "collectorNumber": 150,
+    "name": "Kraken Hunter",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 5,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) ASSAULT (+1 while I'm an attacker.) As you play me, you may spend any number of buffs as an additional cost. Reduce my cost by for each buff you spend.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACCELERATE (You may pay 1 body as an additional cost to have me enter ready.) ASSAULT (+1 Might while i'm an attacker.) As you play me, you may spend any number of buffs as an additional cost. Reduce my cost by body for each buff you spend."
+  },
+  {
+    "collectorNumber": 151,
+    "name": "Lee Sin Centered",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "ACCELERATE (You may pay as an additional cost to have me enter ready.) Other buffed friendly units at my battlefield have +2 .",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACCELERATE (You may pay 1 body as an additional cost to have me enter ready.) Other buffed friendly units at my battlefield have +2 Might."
+  },
+  {
+    "collectorNumber": 152,
+    "name": "Mistfall",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "When you buff a friendly unit, you may pay and exhaust this to ready it.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you buff a friendly unit, you may pay body and exhaust this to ready it."
+  },
+  {
+    "collectorNumber": 153,
+    "name": "Overt Operation",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) For each friendly unit, you may spend its buff to ready it. Then buff all friendly units. (Each one that doesn't have a buff gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (play on your turn or in showdowns.) For each friendly unit, you may spend its buff to ready it. Then buff all friendly units. (Each one that doesn't have a buff gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 154,
+    "name": "Primal Strength",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Give a unit +7 this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Give a unit +7 Might this turn."
+  },
+  {
+    "collectorNumber": 155,
+    "name": "Qiyana Victorious",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "DEFLECT (Opponents must pay to choose me with a spell or ability.) When I conquer, draw 1 or channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "DEFLECT (Opponents must pay 1 Rune to choose me with a spell or ability.) When I conquer, draw 1 or channel 1 Rune exhausted."
+  },
+  {
+    "collectorNumber": 156,
+    "name": "Sabotage",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "Choose an opponent. They reveal their hand. Choose a non-unit card from it, and recycle that card.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Choose an opponent. They reveal their hand. Choose a non-unit card from it, and recycle that card."
+  },
+  {
+    "collectorNumber": 157,
+    "name": "Udyr Wildman",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "Spend my buff: Choose one you've not chosen turn — • Deal 2 to a unit at a battlefield. • Stun a unit at a battlefield • Ready me. • Give me GANKING this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Spend my buff: Choose one you've not chosen turn — •Deal 2 to a unit at a battlefield. •Stun a unit at a battlefield •Ready me. •Give me GANKING this turn."
+  },
+  {
+    "collectorNumber": 158,
+    "name": "Volibear Imposing",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 12,
+    "might": 10,
+    "health": null,
+    "rulesText": "SHIELD 3 (+3 while I'm a defender.) TANK (I must be assigned combat damage first.) When an opponent moves to a battlefield other than mine, draw 1. (Bases are not battlefields.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "SHIELD 3 (+3 Might while I'm a defender.) TANK (I must be assigned combat damage first.) When an opponent moves to a battlefield other than mine, draw 1. (Bases are not battlefields.)"
+  },
+  {
+    "collectorNumber": 159,
+    "name": "Warwick, Hunter",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "I enter ready. When I attack, destroy all damaged enemy units here.",
+    "source": "wiki+patch",
+    "powerCost": "1",
+    "apiRulesText": "I enter ready. When I attack, kill all damaged enemy units here."
+  },
+  {
+    "collectorNumber": 160,
+    "name": "Dazzling Aurora",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 9,
+    "might": null,
+    "health": null,
+    "rulesText": "At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit. Play it, ignoring its cost, and recycle the rest.",
+    "source": "wiki+patch",
+    "powerCost": "2",
+    "apiRulesText": "At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit. Play it, ignoring its cost, and recycle the rest."
+  },
+  {
+    "collectorNumber": 161,
+    "name": "Deadbloom Predator",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 8,
+    "might": 8,
+    "health": null,
+    "rulesText": "DEFLECT (Opponents must pay to choose me with a spell or ability.) You may play me to an occupied enemy battlefield.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "DEFLECT (Opponents must play rune to choose me with a spell or effect.) You may play me to an occupied enemy battlefield."
+  },
+  {
+    "collectorNumber": 162,
+    "name": "Miss Fortune, Captain",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "ACCELERATE. GANKING. The first time I move each turn, you may ready something else that's exhausted.",
+    "source": "wiki+patch",
+    "powerCost": "1",
+    "apiRulesText": "ACCELERATE (You may pay 1 body as an additional cost to have me enter ready.) GANKING (I can move from battlefield to battlefield.) The first time I move each turn, you may ready something else that's exhausted."
+  },
+  {
+    "collectorNumber": 163,
+    "name": "Seal of Strength",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: REACTION — ADD . Activate this any time. (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD body. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 164,
+    "name": "Sett Brawler",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "When I'm played and when I conquer, buff me. (If I don't have a buff, I get a +1 buff.) Spend my buff: Give me +4 this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When I'm played and when I conquer, buff me. (If I don't have a buff, I get a +1 Might buff.) Spend my buff: Give me +4 Might this turn."
+  },
+  {
+    "collectorNumber": 165,
+    "name": "Cemetery Attendant",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, return a unit from your trash to your hand.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, return a unit from your trash to your hand."
+  },
+  {
+    "collectorNumber": 166,
+    "name": "Chaos Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 167,
+    "name": "Ember Monk",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play a card from HIDDEN, give me +2 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play a card from HIDDEN, give me +2 Might this turn."
+  },
+  {
+    "collectorNumber": 168,
+    "name": "Fight or Flight",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) ACTION (Play on your turn or in showdowns.) Move a unit from a battlefield to its base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Move a unit from a battlefield to its base."
+  },
+  {
+    "collectorNumber": 169,
+    "name": "Gust",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Return a unit at a battlefield with 3 or less to its owner's hand.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Return a unit at a battlefield with 3 Might or less to its owner's hand."
+  },
+  {
+    "collectorNumber": 170,
+    "name": "Morbid Return",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Return a unit from your trash to your hand.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Return a unit from your trash to your hand."
+  },
+  {
+    "collectorNumber": 171,
+    "name": "Mystic Poro",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.)"
+  },
+  {
+    "collectorNumber": 172,
+    "name": "Rebuke",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Return a unit at a battlefield to its owner's hand.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Return a unit at a battlefield to its owner's hand."
+  },
+  {
+    "collectorNumber": 173,
+    "name": "Ride the Wind",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (play on your turn or in showdowns.) Move a friendly unit and ready it.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Move a friendly unit and ready it."
+  },
+  {
+    "collectorNumber": 174,
+    "name": "Sai Scout",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) You may play me to an open battlefield.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) You may play me to an open battlefield."
+  },
+  {
+    "collectorNumber": 175,
+    "name": "Shipyard Skulker",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "HIDDEN (Hide for now to react with later.)",
+    "source": "wiki+patch",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 176,
+    "name": "Sneaky Deckhand",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 2,
+    "health": null,
+    "rulesText": "You may play me to an open battlefield.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "You may play me to an open battlefield."
+  },
+  {
+    "collectorNumber": 177,
+    "name": "Stealthy Pursuer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When a friendly unit moves from my location, I may be moved with it.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When a friendly unit moves from my location, I may be moved with it."
+  },
+  {
+    "collectorNumber": 178,
+    "name": "Undercover Agent",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "DEATHKNELL — Discard 2, then draw 2. (When I die, get the effect.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "DEATHKNELL - Discard 2, then draw 2. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 179,
+    "name": "Acceptable Losses",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Each player kills one of their gear.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Each player kills one of their gear."
+  },
+  {
+    "collectorNumber": 180,
+    "name": "Fading Memories",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Give a unit at a battlefield or a gear TEMPORARY. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Give a unit at a battlefield or a gear TEMPORARY. (Kill it at the start of its controller's Beginning Phase, before.)"
+  },
+  {
+    "collectorNumber": 181,
+    "name": "Pack of Wonders",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: Return another friendly gear, unit, or HIDDEN card to its owner's hand.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: Return another friendly gear, unit, or HIDDEN card to its owner's hand."
+  },
+  {
+    "collectorNumber": 182,
+    "name": "Scrapheap",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "When this is played, discarded, or killed, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When this is played, discarded, or killed, draw 1."
+  },
+  {
+    "collectorNumber": 183,
+    "name": "Stacked Deck",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (play on your turn or in showdowns.) Look at the top 3 cards of your Main Deck. Put 1 into your hand and recycle the rest.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Look at the top 3 cards of your Main Deck. Put 1 into your hand and recycle the rest."
+  },
+  {
+    "collectorNumber": 184,
+    "name": "The Syren",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": ", [tap]: Move a friendly unit at a battlefield to your base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "1, Exhaust: Move a friendly unit at a battlefield to your base."
+  },
+  {
+    "collectorNumber": 185,
+    "name": "Traveling Merchant",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "When I move, discard 1 then draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I move, discard 1, then draw 1."
+  },
+  {
+    "collectorNumber": 186,
+    "name": "Treasure Trove",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "When this leaves the board, draw 1 and channel 1 rune exhausted. , [Tap]: Kill this.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When this leaves the board, draw 1 and channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 187,
+    "name": "Whirlwind",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Starting with the next player, each player may return a unit to its owner's hand.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Starting with the next player, each player may return a unit to its owner's hand."
+  },
+  {
+    "collectorNumber": 188,
+    "name": "Zaunite Bouncer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 2,
+    "health": null,
+    "rulesText": "When you play me, return another unit at a battlefield to its owner's hand.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, return another unit at a battlefield to its owner's hand."
+  },
+  {
+    "collectorNumber": 189,
+    "name": "Kayn Unleashed",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "GANKING (I can move from battlefield to battlefield.) If I have moved twice this turn, I don't take damage.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "GANKING (I can move from battlefield to battlefield.) If I have moved twice this turn, I don't take damage."
+  },
+  {
+    "collectorNumber": 190,
+    "name": "Kog'Maw Caustic",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 1,
+    "health": null,
+    "rulesText": "DEATHKNELL - Deal 4 to all units at my battlefield. (When I die, get the effect)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "DEATHKNELL - Deal 4 to all units at my battlefield. (When I die, get the effect)"
+  },
+  {
+    "collectorNumber": 191,
+    "name": "Maddened Marauder",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "Tank (I must be assigned combat damage first.) When you play me, move a unit from a battlefield to its base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "TANK (I must be assigned combat damage first.) When you play me, move a unit from a battlefield to its base."
+  },
+  {
+    "collectorNumber": 192,
+    "name": "Mindsplitter",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": 7,
+    "health": null,
+    "rulesText": "When you play me, choose an opponent. They reveal their hand. Choose a card from it, and they discard that card.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, choose an opponent. They reveal their hand. Choose a card from it, and they discard that card."
+  },
+  {
+    "collectorNumber": 193,
+    "name": "Miss Fortune Buccaneer",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "You may play me to an open battlefield. Friendly units may be played to open battlefields.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "You may play me to an open battlefield. Friendly units may be played to open battlefields."
+  },
+  {
+    "collectorNumber": 194,
+    "name": "Nocturne Horrifying",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "GANKING (I can move from battlefield to battlefield.) When you look at cards from the top of your deck (and don't draw them) and see me, you may play me for .",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "GANKING (I can move from battlefield to battlefield.) When you look at cards from the top of your deck (and don't draw them) and see me, you may play me for [Power]."
+  },
+  {
+    "collectorNumber": 195,
+    "name": "Rhasa the Sunderer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 10,
+    "might": 6,
+    "health": null,
+    "rulesText": "I cost less for each card in your trash.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "I cost 1 less for each card in your trash."
+  },
+  {
+    "collectorNumber": 196,
+    "name": "Soulgorger",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 8,
+    "might": "5",
+    "health": null,
+    "rulesText": "When you play me, you may play a unit from your trash, ignoring its Energy cost. (You may still pay its Power cost.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, you may play a unit from your trash, ignoring its Energy cost. (You must still pay its Power cost.)"
+  },
+  {
+    "collectorNumber": 197,
+    "name": "Teemo Scout",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": 1,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) When you play me, give me +3 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) When you play me, give me +3 Might this turn."
+  },
+  {
+    "collectorNumber": 198,
+    "name": "The Harrowing",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Play a unit from your trash, ignoring its Energy cost. (You must still pay its Power cost.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Play a unit from your trash, ignoring its Energy cost. (You must still pay its Power cost.)"
+  },
+  {
+    "collectorNumber": 199,
+    "name": "Tideturner",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) When you play me, you may choose a friendly unit. Move me to its location and it to my original location.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) When you play me, you may choose a friendly unit. Move me to its location and it to my original location."
+  },
+  {
+    "collectorNumber": 200,
+    "name": "Twisted Fate Gambler",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain: - Deal 2 to an enemy unit here and 1 to all other enemy units here. - Draw 1. - Stun an enemy unit.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain: Fury - Deal 2 to an enemy unit here and 1 to all other enemy units here. Mind - Draw 1. Order - Stun an enemy unit."
+  },
+  {
+    "collectorNumber": 201,
+    "name": "Invert Timelines",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "Each player discards their hand, then draws 4.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Each player discards their hand, then draws 4."
+  },
+  {
+    "collectorNumber": 202,
+    "name": "Jinx Rebel",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "When you discard one or more cards, ready me and give me +1 this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you discard one or more cards, ready me and give me +1 Might this turn."
+  },
+  {
+    "collectorNumber": 203,
+    "name": "Possession",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 8,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Move an enemy unit at a battlefield. Take control of it and recall it. (Send it to your base. This isn't a move.)",
+    "source": "wiki",
+    "powerCost": "3",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Choose an enemy unit at a battlefield. Take control of it and recall it. (Send it to your base. This isn't a move.)"
+  },
+  {
+    "collectorNumber": 204,
+    "name": "Seal of Discord",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]&#160;: REACTION — ADD . (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD chaos. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 205,
+    "name": "Yasuo Windrider",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "GANKING (I can move from battlefield to battlefield) The third time I move in a turn, you score 1 point.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "GANKING (I can move from battlefield to battlefield.) The third time I move in a turn, you score 1 point."
+  },
+  {
+    "collectorNumber": 206,
+    "name": "Back to Back",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give two friendly units each +2 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Give two friendly units each +2 Might this turn."
+  },
+  {
+    "collectorNumber": 207,
+    "name": "Call to Glory",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Give a unit +3 this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Give a unit +3 Might this turn."
+  },
+  {
+    "collectorNumber": 208,
+    "name": "Cruel Patron",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": 6,
+    "health": null,
+    "rulesText": "As an additional cost to play me, kill a friendly unit.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "As an additional cost to play me, kill a friendly unit."
+  },
+  {
+    "collectorNumber": 209,
+    "name": "Cull the Weak",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Each player kills one of their units.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Each player kills one of their units."
+  },
+  {
+    "collectorNumber": 210,
+    "name": "Daring Poro",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "ASSAULT (+1 might while I'm an attacker.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ASSAULT (+1 Might while I'm an attacker.)"
+  },
+  {
+    "collectorNumber": 211,
+    "name": "Faithful Manufactor",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 2,
+    "health": null,
+    "rulesText": "When you play me, play a 1 Recruit unit token here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, play a 1 Might Recruit unit token here."
+  },
+  {
+    "collectorNumber": 212,
+    "name": "Forge of the Future",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "When you play this, play a 1 Recruit unit token at your base. Kill this: Recycle up to 4 cards from trashes.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play this, play a 1 Might Recruit unit token at your base. Kill this: Recycle up to 4 cards from trashes."
+  },
+  {
+    "collectorNumber": 213,
+    "name": "Hidden Blade",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) ACTION (Play on your turn or showdowns.) Kill a unit at a battlefield, Its controller draws 2.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Kill a unit at a battlefield. Its controller draws 2."
+  },
+  {
+    "collectorNumber": 214,
+    "name": "Order Rune",
+    "set": "Origins",
+    "type": "Rune",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 215,
+    "name": "Petty Officer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 5,
+    "might": 5,
+    "health": null,
+    "rulesText": "ASSAULT (+1 while I'm an attacker.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ASSAULT (+1 Might while I'm an attacker.)"
+  },
+  {
+    "collectorNumber": 216,
+    "name": "Soaring Scout",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 1,
+    "health": null,
+    "rulesText": "Deathknell Play your top rune exhausted. (When I die, get the effect.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "DEATHKNELL - Channel 1 rune exhausted. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 217,
+    "name": "Trifarian Gloryseeker",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 2,
+    "might": 2,
+    "health": null,
+    "rulesText": "LEGION — When you play me, buff me. (If I don't have a buff, I get a +1 buff. Get the effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "LEGION When you play me, buff me. (If I don't have a buff, I get a +1 Might buff. Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 218,
+    "name": "Vanguard Captain",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "Legion When you play me, play two 1 Recruit unit tokens here. (Gain this effect if you've played another card this turn.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "LEGION - When you play me, play two 1 Might Recruit unit token here. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 219,
+    "name": "Vanguard Sergeant",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Common",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki",
+    "powerCost": "0"
+  },
+  {
+    "collectorNumber": 220,
+    "name": "Facebreaker",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (Hide now for to react with later for .) ACTION (play on your turn or in showdowns.) Stun a friendly unit and an enemy unit at the same battlefield. (They don't deal combat damage this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Stun a friendly unit and an enemy unit at the same battlefield. (They don't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 221,
+    "name": "Imperial Decree",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 5,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) When any unit takes damage this turn, kill it.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) When any unit takes damage this turn, kill it."
+  },
+  {
+    "collectorNumber": 222,
+    "name": "Noxian Drummer",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "When I move to a battlefield, play a 1 Recruit unit token here. (It is also at the battlefield.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When I move to a battlefield, play a 1 Might Recruit unit token here. (It is also at the battlefield.)"
+  },
+  {
+    "collectorNumber": 223,
+    "name": "Peak Guardian",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 6,
+    "might": 5,
+    "health": null,
+    "rulesText": "When you play me, buff me. Then, if I am at a battlefield, buff all other friendly units there. (To buff a unit give it a +1 if it doesn't already have one.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, buff me. Then, if I am at a battlefield, buff all other friendly units there. (To buff a unit give it a +1 Might if it doesn't already have one.)"
+  },
+  {
+    "collectorNumber": 224,
+    "name": "Salvage",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (play on your turn or in showdowns.) You may kill a gear. Draw 1.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) You may kill a gear. Draw 1."
+  },
+  {
+    "collectorNumber": 225,
+    "name": "Solari Chief",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play me, choose an enemy unit. If it is stunned, kill it. Otherwise, stun it.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When you play me, choose an enemy unit. If it is stunned, kill it. Otherwise, stun it. (It doesn't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 226,
+    "name": "Spectral Matron",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play me, you may play a unit costing no more than 3 and no more than from your trash, ignoring its cost.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, you may play a unit costing no more than 3 and no more than rune from your trash, ignoring its cost."
+  },
+  {
+    "collectorNumber": 227,
+    "name": "Symbol of the Solari",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "If a combat where you are the attacker ends in a tie, recall ALL units instead. (Send them to base. This isn't a move. Ties are calculated after combat damage is dealt.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "If a combat where you are the attacker ends in a tie, recall ALL units instead. (Send them to base. This isn't a move. Ties are calculated after combat damage is dealt.)"
+  },
+  {
+    "collectorNumber": 228,
+    "name": "Vanguard Helm",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Give a friendly unit +1 Might.",
+    "source": "wiki+patch",
+    "powerCost": "0",
+    "apiRulesText": "When a buffed friendly unit dies, buff another friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 229,
+    "name": "Vengeance",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Uncommon",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Kill a unit.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Kill a unit."
+  },
+  {
+    "collectorNumber": 230,
+    "name": "Albus Ferros",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 3,
+    "health": null,
+    "rulesText": "When you play me, spend any number of buffs. For each buff spent, channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play me, spend any number of buffs. For each buff spent, channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 231,
+    "name": "Commander Ledros",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 8,
+    "health": null,
+    "rulesText": "As you play me, you may kill any number of friendly units as an additional cost. Reduce my cost by order for each killed this way. DEFLECT (Opponents must pay rune to choose me with a spell or ability.) GANKING (I can move from battlefield to battlefield.)",
+    "source": "wiki",
+    "powerCost": "4",
+    "apiRulesText": "As you play me, you may kill any number of friendly units as an additional cost. Reduce my cost by order for each killed this way. DEFLECT (Opponents must pay rune to choose me with a spell or ability.) GANKING (I can move from battlefield to battlefield.)"
+  },
+  {
+    "collectorNumber": 232,
+    "name": "Fiora Victorious",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "While I'm MIGHTY, I have DEFLECT, GANKING and SHIELD. (I'm Mighty while I have 5+ .)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "While I'm MIGHTY, I have DEFLECT, GANKING and SHIELD. (I'm Mighty while I have 5+ Might.)"
+  },
+  {
+    "collectorNumber": 233,
+    "name": "Grand Strategem",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Give friendly units +5 this turn.",
+    "source": "wiki",
+    "powerCost": "3",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Give friendly units +5 Might this turn."
+  },
+  {
+    "collectorNumber": 234,
+    "name": "Harnessed Dragon",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 8,
+    "might": 6,
+    "health": null,
+    "rulesText": "When you play me, kill a unit.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "When you play me, kill an enemy unit."
+  },
+  {
+    "collectorNumber": 235,
+    "name": "Karma Channeler",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "Vision (When you play me, look at the top card of your Main Deck. You may recycle it.) When you recycle one or more cards, buff a friendly unit. (If it doesn't have a buff, it gets a +1 buff. Runes aren't cards.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "VISION (When you play me, look at the top card of your Main Deck. You may recycle it.) When you recycle one or more cards, buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff. Runes aren't cards.)"
+  },
+  {
+    "collectorNumber": 236,
+    "name": "Karthus Eternal",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "Your DEATHKNELL effects trigger an additional time.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Your DEATHKNELL trigger an additional time"
+  },
+  {
+    "collectorNumber": 237,
+    "name": "King's Edict",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Starting with the next player, each other player chooses a unit you don't control that hasn't been chosen for this spell. Kill those units.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Starting with the next player, each other player chooses a unit you don't control that hasn't been chosen for this spell. Kill those units."
+  },
+  {
+    "collectorNumber": 238,
+    "name": "Leona Determined",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "SHIELD (+1 Might while I'm a defender.) When I attack, stun an enemy unit here. (It doesn't deal combat damage this turn.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "SHIELD (+1 Might while I'm a defender.) When I attack, stun an enemy unit here. (It doesn't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 239,
+    "name": "Machine Evangel",
+    "set": "Origins",
+    "type": "Unit",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 5,
+    "might": 4,
+    "health": null,
+    "rulesText": "When you play me, draw 1 for each gear you control.",
+    "source": "wiki+patch",
+    "powerCost": "1",
+    "apiRulesText": "DEATHKNELL - Play three 1 might Recruit unit tokens into your base. (When I die, get the effect.)"
+  },
+  {
+    "collectorNumber": 240,
+    "name": "Sett Kingpin",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 4,
+    "might": 5,
+    "health": null,
+    "rulesText": "TANK (I must be assigned combat damage first.) I get +1 for each buffed friendly unit at my battlefield.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "TANK (I must be assigned combat damage first.) I get +1 might for each buffed friendly unit at my battlefield."
+  },
+  {
+    "collectorNumber": 241,
+    "name": "Shen Kinkou",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 3,
+    "might": 3,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells and abilities resolve, including to a battlefield you control.) SHIELD 2 (+2 while I'm a defender.) TANK (I must be assigned combat damage first.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve, including to a battlefield you control.) SHIELD 2 (+2 might while I'm a defender.) TANK (I must be assigned combat damage first.)"
+  },
+  {
+    "collectorNumber": 242,
+    "name": "Baited Hook",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "[Tap]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may play a unit from among them that has Might up to 1 more than the killed unit, ignoring its cost. Then recycle the rest.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "1 order exhaust: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may play a unit from among them that has Might up to 1 more than the killed unit, ignoring its cost. Then recycle the rest."
+  },
+  {
+    "collectorNumber": 243,
+    "name": "Darius Executioner",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 6,
+    "might": 6,
+    "health": null,
+    "rulesText": "LEGION - When you play me, ready me. (Get the effect if you've played another card this turn) Other friendly units have +1 here.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "LEGION - When you play me, ready me. (Get the effect if you've played another card this turn) Other friendly units have +1 might here."
+  },
+  {
+    "collectorNumber": 244,
+    "name": "Divine Judgment",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": 7,
+    "might": null,
+    "health": null,
+    "rulesText": "Each player chooses 2 units, 2 gear, 2 runes, and 2 cards in their hands. Recycle the rest.",
+    "source": "wiki+patch",
+    "powerCost": "2",
+    "apiRulesText": "Each player chooses 2 units, 2 gear, 2 runes, and 2 cards in their hands. Recycle the rest."
+  },
+  {
+    "collectorNumber": 245,
+    "name": "Seal of Unity",
+    "set": "Origins",
+    "type": "Gear",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 0,
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]&#160;: Add . Activate this any time.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Exhaust: REACTION - ADD order. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 246,
+    "name": "Viktor Leader",
+    "set": "Origins",
+    "type": "Champion",
+    "domains": [
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": 4,
+    "health": null,
+    "rulesText": "When another non-Recruit unit you control dies, play a 1 might Recruit unit token into your base.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "When another non-Recruit unit you control dies, play a 1 might Recruit unit token into your base."
+  },
+  {
+    "collectorNumber": 247,
+    "name": "Kai'Sa Daughter of the Void",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Fury",
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "[tap] REACTION - ADD . Use only to play spells. (Abilities that add resources can't be reacted to.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: REACTION - ADD rune. Use only to play spells. (Abilities that add resources can't be reacted to.)"
+  },
+  {
+    "collectorNumber": 248,
+    "name": "Icathian Rain",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury",
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 7,
+    "might": null,
+    "health": null,
+    "rulesText": "Do this 6 times: Deal 2 to a unit. (You can choose different units.)",
+    "source": "wiki",
+    "powerCost": "3",
+    "apiRulesText": "Do this 6 times: Deal 2 to a unit. (You can choose different units.)"
+  },
+  {
+    "collectorNumber": 249,
+    "name": "Volibear Relentless Storm",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Fury",
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you play a MIGHTY unit, you may exhaust me to channel 1 rune exhausted. (A unit is Mighty while it has 5+ .)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you play a MIGHTY unit, you may exhaust me to channel 1 rune exhausted. (A unit is Mighty while it has 5+ Might)"
+  },
+  {
+    "collectorNumber": 250,
+    "name": "Stormbringer",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury",
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 6,
+    "might": null,
+    "health": null,
+    "rulesText": "Choose a friendly unit in your base. Deal damage equal to its Might to all enemies at a battlefield, then move your unit there.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "Choose a friendly unit in your base. Deal damage equal to its Might to all enemy units at a battlefield, then move your unit there."
+  },
+  {
+    "collectorNumber": 251,
+    "name": "Jinx Loose Cannon",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Fury",
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "At start of your Beginning Phase, draw 1 if you have 1 or fewer cards in your hand."
+  },
+  {
+    "collectorNumber": 252,
+    "name": "Super Mega Death Rocket!",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury",
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Deal 5 to a unit. When you conquer, you may discard 1 to return this from your trash to your hand.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Deal 5 to a unit. When you conquer, you may discard 1 to return this from your trash to your hand."
+  },
+  {
+    "collectorNumber": 253,
+    "name": "Darius Hand of Noxus",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Fury",
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "[tap] REACTION, LEGION — ADD (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust REACTION, LEGION - ADD 1 (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
+  },
+  {
+    "collectorNumber": 254,
+    "name": "Noxian Guillotine",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Fury",
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Choose a unit. Kill it the next time it takes damage this turn. LEGION - Kill it now instead. (Get the effect if you've played another card this turn)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Choose a unit. Kill it the next time it takes damage this turn. LEGION - Kill it now instead. (Get the effect if you've played another card this turn.)"
+  },
+  {
+    "collectorNumber": 255,
+    "name": "Ahri Nine-Tailed Fox",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Calm",
+      "Mind"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When an enemy unit attacks a battlefield you control, give it -1 this turn, to a minimum of 1",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When an enemy unit attacks a battlefield you control, give it -1 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 256,
+    "name": "Fox-Fire",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm",
+      "Mind"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "HIDDEN (hide now for rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Kill any number of units at a battlefield with total Might 4 or less.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "HIDDEN (Hide now for 1 Rune to react with later for 0.) ACTION (Play on your turn or in showdowns.) Kill any number of units at a battlefield with total Might 4 or less."
+  },
+  {
+    "collectorNumber": 257,
+    "name": "Lee Sin Blind Monk",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Calm",
+      "Body"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "1, Exhaust: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 258,
+    "name": "Dragon's Rage",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm",
+      "Body"
+    ],
+    "rarity": "Epic",
+    "energyCost": 4,
+    "might": null,
+    "health": null,
+    "rulesText": "Move an enemy unit. Then choose another enemy unit at its destination. They deal damage equal to their Mights to each other.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Move an enemy unit. Then choose another enemy unit at its destination. They deal damage equal to their Mights to each other."
+  },
+  {
+    "collectorNumber": 259,
+    "name": "Yasuo Unforgiven",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Calm",
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": ", [tap]&#160;: Move a friendly unit to or from your base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "2, Exhaust: Move a friendly unit to or from your base."
+  },
+  {
+    "collectorNumber": 260,
+    "name": "Last Breath",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm",
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Ready a friendly unit. It deals damage equal to its Might to an enemy at a battlefield.",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Ready a friendly unit. It deals damage equal to its Might to an enemy at a battlefield."
+  },
+  {
+    "collectorNumber": 261,
+    "name": "Leona Radiant Dawn",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Calm",
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you stun one or more enemy units, buff a friendly unit. (If it doesn't have a buff, it gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you stun one or more enemy units, buff a friendly unit. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 262,
+    "name": "Zenith Blade",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Calm",
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 3,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or in showdowns.) Stun an enemy at a battlefield. You may move a friendly unit to that enemy unit's battlefield. (A stunned unit doesn't deal combat damage this turn.)",
+    "source": "wiki",
+    "powerCost": "2",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Stun an enemy at a battlefield. You may move a friendly unit to that enemy unit's battlefield. (A stunned unit doesn't deal combat damage this turn.)"
+  },
+  {
+    "collectorNumber": 263,
+    "name": "Teemo Swift Scout",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Mind",
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "You may pay to hide a card with HIDDEN instead of . , [tap] Put a Teemo unit you own into your hand from your Champion Zone on the board.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "You may pay 1 to hide a card with HIDDEN instead of rune. 1, Exhaust: Put a Teemo unit you own into your hand from your Champion Zone or the board."
+  },
+  {
+    "collectorNumber": 264,
+    "name": "Guerilla Warfare",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind",
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "Return up to two cards with HIDDEN from your trash to your hand. You can hide ignoring costs this turn.",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Return up to two cards with HIDDEN from your trash to your hand. You can hide ignoring costs this turn."
+  },
+  {
+    "collectorNumber": 265,
+    "name": "Viktor Herald of the Arcane",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Mind",
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": ", [tap]&#160;: Play a 1 Recuit unit token.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "1, Exhaust: Play a 1 Might Recruit unit token."
+  },
+  {
+    "collectorNumber": 266,
+    "name": "Siphon Power",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Mind",
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 2,
+    "might": null,
+    "health": null,
+    "rulesText": "REACTION (Play any time, even before spells or abilities are resolved.) Choose a battlefield. Give friendly units there +1 this turn and enemy units there -1 , to a minimum of 1",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "REACTION (Play any time, even before spells and abilities resolve.) Choose a battlefield. Give friendly units there +1 Might this turn and enemy units there -1 Might this turn, to a minimum of 1 Might."
+  },
+  {
+    "collectorNumber": 267,
+    "name": "Miss Fortune Bounty Hunter",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Body",
+      "Chaos"
+    ],
+    "rarity": "Rare",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "[tap]: Give a unit GANKING this tum. (It can move from battlefield to battlefield.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Exhaust: Give a unit GANKING this turn. (It can move from battlefield to battlefield.)"
+  },
+  {
+    "collectorNumber": 268,
+    "name": "Bullet Time",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body",
+      "Chaos"
+    ],
+    "rarity": "Epic",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "ACTION (Play on your turn or showdowns.) Pay an amount of to deal that much damage to all enemy units at a battlefield.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "ACTION (Play on your turn or in showdowns.) Pay any amount of rune to deal that much damage to all enemy units at a battlefield."
+  },
+  {
+    "collectorNumber": 269,
+    "name": "Sett The Boss",
+    "set": "Origins",
+    "type": "Legend",
+    "domains": [
+      "Body",
+      "Order"
+    ],
+    "rarity": "Rare",
+    "energyCost": null,
+    "might": null,
+    "health": null,
+    "rulesText": "When a buffed unit you control would die, you may pay and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.) When you conquer, ready me.",
+    "source": "wiki",
+    "apiRulesText": "When a buffed unit you control would die, you may pay rune and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.) When you conquer, ready me."
+  },
+  {
+    "collectorNumber": 270,
+    "name": "Showstopper",
+    "set": "Origins",
+    "type": "Spell",
+    "domains": [
+      "Body",
+      "Order"
+    ],
+    "rarity": "Epic",
+    "energyCost": 1,
+    "might": null,
+    "health": null,
+    "rulesText": "Buff a friendly unit in your base, then move it to a battlefield. (If it doesn't have a buff, it gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "1",
+    "apiRulesText": "Buff a friendly unit in your base, then move it to a battlefield. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 271,
+    "name": "Recruit",
+    "set": "Origins",
+    "type": "Token",
+    "domains": [],
+    "rarity": "Common",
+    "energyCost": null,
+    "might": 1,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki"
+  },
+  {
+    "collectorNumber": 272,
+    "name": "Recruit",
+    "set": "Origins",
+    "type": "Token",
+    "domains": [],
+    "rarity": "Common",
+    "energyCost": null,
+    "might": 1,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki"
+  },
+  {
+    "collectorNumber": 273,
+    "name": "Recruit",
+    "set": "Origins",
+    "type": "Token",
+    "domains": [],
+    "rarity": "Common",
+    "energyCost": null,
+    "might": 1,
+    "health": null,
+    "rulesText": "Retrieved from \"",
+    "source": "wiki"
+  },
+  {
+    "collectorNumber": 274,
+    "name": "Sprite",
+    "set": "Origins",
+    "type": "Token",
+    "domains": [],
+    "rarity": "Common",
+    "energyCost": null,
+    "might": 3,
+    "health": null,
+    "rulesText": "TEMPORARY (Kill me at the start of your Beginning Phase, before scoring.)",
+    "source": "wiki"
+  },
+  {
+    "collectorNumber": 275,
+    "name": "Altar to Unity",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, play a 1 Recruit unit token in your base.",
+    "source": "wiki+patch",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, play a 1 Might Recruit unit token in your base."
+  },
+  {
+    "collectorNumber": 276,
+    "name": "Aspirant's Climb",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Increase the points needed to win the game by 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Increase the points needed to win the game by 1"
+  },
+  {
+    "collectorNumber": 277,
+    "name": "Back-Alley Bar",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When a unit moves from here, give it +1 this turn.",
+    "source": "wiki+patch",
+    "powerCost": "0",
+    "apiRulesText": "When a unit moves from here, give it +1 Might this turn."
+  },
+  {
+    "collectorNumber": 278,
+    "name": "Bandle Tree",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "You may hide an additional card here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "You may hide an additional card here."
+  },
+  {
+    "collectorNumber": 279,
+    "name": "Fortified Position",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you defend here, choose a unit. It gains SHIELD 2 this combat. (+2 might while It's a defender.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you defend here, choose a unit. It gains SHIELD 2 this combat. (+2 Might while It's a defender.)"
+  },
+  {
+    "collectorNumber": 280,
+    "name": "Grove of the God-Willow",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, draw 1."
+  },
+  {
+    "collectorNumber": 281,
+    "name": "Hallowed Tomb",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, you may return your Chosen Champion from your trash to your Champion Zone if it is empty.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, you may return your Chosen Champion from your trash to your Champion Zone if it is empty."
+  },
+  {
+    "collectorNumber": 282,
+    "name": "Monastery of Hirana",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you conquer here, you may spend a buff to draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you conquer here, you may spend a buff to draw 1."
+  },
+  {
+    "collectorNumber": 283,
+    "name": "Novari Fighting Pit",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, buff a unit here. (If it doesn't have a buff, it gets a +1 buff.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, buff a unit here. (If it doesn't have a buff, it gets a +1 Might buff.)"
+  },
+  {
+    "collectorNumber": 284,
+    "name": "Obelisk of Power",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "At the start of each player's first Beginning Phase, that player channels 1 rune.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Players channel one additional rune during their first Runic Phase this game."
+  },
+  {
+    "collectorNumber": 285,
+    "name": "Reaver's Row",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you defend here, you may move a friendly unit here to base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you defend here, you may move a friendly unit here to base."
+  },
+  {
+    "collectorNumber": 286,
+    "name": "Reckoner's Arena",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, activate the conquer effects of units here.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold this, activate the conquer abilities of units here."
+  },
+  {
+    "collectorNumber": 287,
+    "name": "Sigil of the Storm",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you conquer here, recycle one of your runes.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you conquer here, recycle one of your runes"
+  },
+  {
+    "collectorNumber": 288,
+    "name": "Startipped Peak",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, you may channel 1 rune exhausted.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, you may channel 1 rune exhausted."
+  },
+  {
+    "collectorNumber": 289,
+    "name": "Targon's Peak",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you conquer here, choose 2 runes. Ready them at the end of this turn.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you conquer here, ready 2 runes at the end of this turn"
+  },
+  {
+    "collectorNumber": 290,
+    "name": "The Arena's Greatest",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "At the start of each player's first Beginning Phase, that player gains 1 point.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "At the start of each player's first Beginning Phase, that player gains 1 point."
+  },
+  {
+    "collectorNumber": 291,
+    "name": "The Candlelit Sanctum",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you conquer here, look at the top two cards of your Main Deck. You may recycle one or both of them. Put those you don't back in any order.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you conquer here, look at the top two cards of your Main Deck. You may recycle one or both of them. Put those you don't back in any order."
+  },
+  {
+    "collectorNumber": 292,
+    "name": "The Dreaming Tree",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "The first time you choose a friendly unit with a spell here each turn, draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "The first time you choose a friendly unit with a spell here each turn, draw 1."
+  },
+  {
+    "collectorNumber": 293,
+    "name": "The Grand Plaza",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you hold here, if you have 7+ units here, you win the game.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you hold here, if you have 7+ units here, you win the game."
+  },
+  {
+    "collectorNumber": 294,
+    "name": "Trifarian War Camp",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Units here have +1 . (Including attackers.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Units here have +1 Might. (This includes attackers.)"
+  },
+  {
+    "collectorNumber": 295,
+    "name": "Vilemaw's Lair",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Units can't move from here to base.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Units can't move from here to base."
+  },
+  {
+    "collectorNumber": 296,
+    "name": "Void Gate",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Spells and abilities affecting units here each deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Spells and abilities affecting units here each deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)"
+  },
+  {
+    "collectorNumber": 297,
+    "name": "Windswept Hillock",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "Units here have Ganking . (They can move battlefield to battlefield.)",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "Units here have GANKING. (They can move from battlefield to battlefield.)"
+  },
+  {
+    "collectorNumber": 298,
+    "name": "Zaun Warrens",
+    "set": "Origins",
+    "type": "Battlefield",
+    "domains": [],
+    "rarity": "Uncommon",
+    "energyCost": "0",
+    "might": null,
+    "health": null,
+    "rulesText": "When you conquer here, discard 1 then draw 1.",
+    "source": "wiki",
+    "powerCost": "0",
+    "apiRulesText": "When you conquer here, discard 1, then draw 1."
+  }
+]

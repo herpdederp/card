@@ -19,6 +19,6 @@ export { SeededRNG, combineSeeds } from "./engine/rng.js";
 export { executeEffects } from "./engine/effects.js";
 export { findTriggeredAbilities, checkStaticAbilities } from "./engine/triggers.js";
 
-// Sample cards (for testing / getting started)
-export { originsCards } from "./cards/origins/sample-cards.js";
+// Card data (full Origins set + backward-compatible alias)
+export { originsAllCards, originsCards } from "./cards/origins/index.js";
 export { registerOriginsScripts } from "./cards/origins/sample-scripts.js";
